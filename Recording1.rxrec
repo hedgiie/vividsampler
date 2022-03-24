@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="99de563f-31c6-482b-a844-76c0030a7ce5"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording1"
+	namespace="wfrmhr">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+	</recorditems>
+	<repository
+	id="d78d9a6f-6d44-4cda-a8f0-96f639c17428"
+	name="wfrmhrRepository"
+	relativepath="wfrmhrRepository.rxrep">
+		<codegen
+		classname="wfrmhrRepository"
+		namespace="wfrmhr">
+		</codegen>
+		<rootfolder
+		id="90584611-5862-417c-b693-c9003ea6109c"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<references>
+	</references>
+</recordtable>

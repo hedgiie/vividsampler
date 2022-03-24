@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="af8917bf-55eb-46a3-b6d9-74f54f6b0914"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseBrowser"
+	namespace="wfrmhr">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="0ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="1aa87523-5b0f-4bc6-9f3f-ee606f481298">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a75dfc80-d9e3-495d-b2a9-4fba3120ed8b"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@processname='chrome']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="d78d9a6f-6d44-4cda-a8f0-96f639c17428"
+	name="wfrmhrRepository"
+	relativepath="wfrmhrRepository.rxrep">
+		<codegen
+		classname="wfrmhrRepository"
+		namespace="wfrmhr">
+		</codegen>
+		<rootfolder
+		id="90584611-5862-417c-b693-c9003ea6109c"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseBrowser.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

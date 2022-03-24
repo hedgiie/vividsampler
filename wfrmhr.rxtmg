@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc>
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="wfrmhr"
+      id="b04b4f67-6cfd-4827-8a81-b4a3fe0c9173"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="wfrmhr"
+      id="b04b4f67-6cfd-4827-8a81-b4a3fe0c9173"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>
