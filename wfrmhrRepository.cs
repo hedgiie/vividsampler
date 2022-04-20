@@ -85,6 +85,11 @@ namespace wfrmhr
         [RepositoryFolder("a75dfc80-d9e3-495d-b2a9-4fba3120ed8b")]
         public partial class ApplicationUnderTestAppFolder : RepoGenBaseFolder
         {
+            wfrmhrRepositoryFolders.CdkGlobalOverlayWrapperFolder _cdkglobaloverlaywrapper;
+            RepoItemInfo _httpsd1wfappsvividsolutionscompubInfo;
+            RepoItemInfo _cdkcellcdkcolumnnamematcellmatcoInfo;
+            RepoItemInfo _raptorsiiInfo;
+            RepoItemInfo _spantagcancelInfo;
 
             /// <summary>
             /// Creates a new ApplicationUnderTest  folder.
@@ -92,6 +97,11 @@ namespace wfrmhr
             public ApplicationUnderTestAppFolder(RepoGenBaseFolder parentFolder) :
                     base("ApplicationUnderTest", "/dom[@domain='d1wfapps.vividsolutions.com']", parentFolder, 30000, null, false, "a75dfc80-d9e3-495d-b2a9-4fba3120ed8b", "")
             {
+                _cdkglobaloverlaywrapper = new wfrmhrRepositoryFolders.CdkGlobalOverlayWrapperFolder(this);
+                _httpsd1wfappsvividsolutionscompubInfo = new RepoItemInfo(this, "HttpsD1wfappsVividsolutionsComPub", ".//div[#'wfrmMain']/?/?/tag[@tagname='wf-application']/div[2]/div[3]/tag/div[2]/div/a[3]", ".//div[#'wfrmMain']//tag[@tagname='wf-menu']/div[2]/div/a[3]", 30000, null, "9b84029e-17c5-43a3-8989-b66976745059");
+                _cdkcellcdkcolumnnamematcellmatcoInfo = new RepoItemInfo(this, "CdkCellCdkColumnNameMatCellMatCo", ".//div[#'core-interface-container']//tag[@tagname='base-wrapper']/div/div/div/div[4]/table/tbody/tr[1]/td[2]", ".//div[#'core-interface-container']//tbody/tr[1]/td[2]", 30000, null, "3ed16c87-ee8d-4801-831d-98b916c06940");
+                _raptorsiiInfo = new RepoItemInfo(this, "RaptorsII", ".//div[#'core-interface-container']/div//tag[@tagname='base-wrapper']/div/div/div[2]/tag[@tagname='mat-tab-group']/div/tag[1]/div/?/?/tag[@tagname='wfrm-assignment-detail-sections']/div//tag[@tagname='wfrm-assignment-detail-resources-desktop']/tag[@tagname='wfrm-base-expansion-panel']/tag[@tagname='mat-expansion-panel']/div/div/div/div/div/div[2]/div/table/tbody/tr[2]/td[@innertext='Raptors II']", ".//div[#'core-interface-container']//td[@innertext='Raptors II']", 30000, null, "a2792ee2-a664-4dde-a052-c367114fb497");
+                _spantagcancelInfo = new RepoItemInfo(this, "SpanTagCancel", "body/div[5]/div[5]/?/?/tag[@tagname='owl-date-time-container']/div[2]/div[2]/button[1]/span[@innertext=' Cancel ']", ".//span[@innertext=' Cancel ']", 30000, null, "38e241c6-b8cf-4247-bfc4-d282b0239541");
             }
 
             /// <summary>
@@ -115,6 +125,229 @@ namespace wfrmhr
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The HttpsD1wfappsVividsolutionsComPub item.
+            /// </summary>
+            [RepositoryItem("9b84029e-17c5-43a3-8989-b66976745059")]
+            public virtual Ranorex.ATag HttpsD1wfappsVividsolutionsComPub
+            {
+                get
+                {
+                    return _httpsd1wfappsvividsolutionscompubInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The HttpsD1wfappsVividsolutionsComPub item info.
+            /// </summary>
+            [RepositoryItemInfo("9b84029e-17c5-43a3-8989-b66976745059")]
+            public virtual RepoItemInfo HttpsD1wfappsVividsolutionsComPubInfo
+            {
+                get
+                {
+                    return _httpsd1wfappsvividsolutionscompubInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CdkCellCdkColumnNameMatCellMatCo item.
+            /// </summary>
+            [RepositoryItem("3ed16c87-ee8d-4801-831d-98b916c06940")]
+            public virtual Ranorex.TdTag CdkCellCdkColumnNameMatCellMatCo
+            {
+                get
+                {
+                    return _cdkcellcdkcolumnnamematcellmatcoInfo.CreateAdapter<Ranorex.TdTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CdkCellCdkColumnNameMatCellMatCo item info.
+            /// </summary>
+            [RepositoryItemInfo("3ed16c87-ee8d-4801-831d-98b916c06940")]
+            public virtual RepoItemInfo CdkCellCdkColumnNameMatCellMatCoInfo
+            {
+                get
+                {
+                    return _cdkcellcdkcolumnnamematcellmatcoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RaptorsII item.
+            /// </summary>
+            [RepositoryItem("a2792ee2-a664-4dde-a052-c367114fb497")]
+            public virtual Ranorex.TdTag RaptorsII
+            {
+                get
+                {
+                    return _raptorsiiInfo.CreateAdapter<Ranorex.TdTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RaptorsII item info.
+            /// </summary>
+            [RepositoryItemInfo("a2792ee2-a664-4dde-a052-c367114fb497")]
+            public virtual RepoItemInfo RaptorsIIInfo
+            {
+                get
+                {
+                    return _raptorsiiInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SpanTagCancel item.
+            /// </summary>
+            [RepositoryItem("38e241c6-b8cf-4247-bfc4-d282b0239541")]
+            public virtual Ranorex.SpanTag SpanTagCancel
+            {
+                get
+                {
+                    return _spantagcancelInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SpanTagCancel item info.
+            /// </summary>
+            [RepositoryItemInfo("38e241c6-b8cf-4247-bfc4-d282b0239541")]
+            public virtual RepoItemInfo SpanTagCancelInfo
+            {
+                get
+                {
+                    return _spantagcancelInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CdkGlobalOverlayWrapper folder.
+            /// </summary>
+            [RepositoryFolder("b157edf8-289c-4dbb-acfc-366af3c78a3b")]
+            public virtual wfrmhrRepositoryFolders.CdkGlobalOverlayWrapperFolder CdkGlobalOverlayWrapper
+            {
+                get { return _cdkglobaloverlaywrapper; }
+            }
+        }
+
+        /// <summary>
+        /// The CdkGlobalOverlayWrapperFolder folder.
+        /// </summary>
+        [RepositoryFolder("b157edf8-289c-4dbb-acfc-366af3c78a3b")]
+        public partial class CdkGlobalOverlayWrapperFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _textInfo;
+            RepoItemInfo _falseInfo;
+            RepoItemInfo _matradiooutercircleInfo;
+
+            /// <summary>
+            /// Creates a new CdkGlobalOverlayWrapper  folder.
+            /// </summary>
+            public CdkGlobalOverlayWrapperFolder(RepoGenBaseFolder parentFolder) :
+                    base("CdkGlobalOverlayWrapper", "body/div[5]/div[3]", parentFolder, 30000, null, false, "b157edf8-289c-4dbb-acfc-366af3c78a3b", "")
+            {
+                _textInfo = new RepoItemInfo(this, "Text", ".//tag[@tagname='wfrm-base-dialog']/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[3]/div[2]/tag/div/div[1]/div/div/input[2]", "tag[1]/div/div/div/div[3]/div[2]/tag[@tagname='mat-form-field']/div/div[1]/div/div/input[2]", 30000, null, "58fd4861-98b3-49b2-b439-eefb8794a13b");
+                _falseInfo = new RepoItemInfo(this, "False", ".//tag[@tagname='wfrm-base-dialog']/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[4]/div[2]/tag/div/div[1]/?/?/textarea[@required='False']", "tag[1]/div/div/div/div[4]/div[2]/tag[@tagname='mat-form-field']/div/div[1]/div/textarea[@required='False']", 30000, null, "238d4119-0da4-4cb1-b25f-c8f42dd444ce");
+                _matradiooutercircleInfo = new RepoItemInfo(this, "MatRadioOuterCircle", "div//tag[@tagname='wfrm-base-dialog']/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div/div/tag/div/div[1]/div/tag[@tagname='mat-radio-group']/tag[2]/label/span[1]/span[1]", "label/span[1]/span[1]", 30000, null, "d39a867a-d5e1-4a6d-9ad2-95ff07e1321a");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("b157edf8-289c-4dbb-acfc-366af3c78a3b")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("b157edf8-289c-4dbb-acfc-366af3c78a3b")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Text item.
+            /// </summary>
+            [RepositoryItem("58fd4861-98b3-49b2-b439-eefb8794a13b")]
+            public virtual Ranorex.InputTag Text
+            {
+                get
+                {
+                    return _textInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text item info.
+            /// </summary>
+            [RepositoryItemInfo("58fd4861-98b3-49b2-b439-eefb8794a13b")]
+            public virtual RepoItemInfo TextInfo
+            {
+                get
+                {
+                    return _textInfo;
+                }
+            }
+
+            /// <summary>
+            /// The False item.
+            /// </summary>
+            [RepositoryItem("238d4119-0da4-4cb1-b25f-c8f42dd444ce")]
+            public virtual Ranorex.TextAreaTag False
+            {
+                get
+                {
+                    return _falseInfo.CreateAdapter<Ranorex.TextAreaTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The False item info.
+            /// </summary>
+            [RepositoryItemInfo("238d4119-0da4-4cb1-b25f-c8f42dd444ce")]
+            public virtual RepoItemInfo FalseInfo
+            {
+                get
+                {
+                    return _falseInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MatRadioOuterCircle item.
+            /// </summary>
+            [RepositoryItem("d39a867a-d5e1-4a6d-9ad2-95ff07e1321a")]
+            public virtual Ranorex.SpanTag MatRadioOuterCircle
+            {
+                get
+                {
+                    return _matradiooutercircleInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MatRadioOuterCircle item info.
+            /// </summary>
+            [RepositoryItemInfo("d39a867a-d5e1-4a6d-9ad2-95ff07e1321a")]
+            public virtual RepoItemInfo MatRadioOuterCircleInfo
+            {
+                get
+                {
+                    return _matradiooutercircleInfo;
                 }
             }
         }

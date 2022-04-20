@@ -1,30 +1,120 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<repository
-name="wfrmhrRepository"
-id="d78d9a6f-6d44-4cda-a8f0-96f639c17428">
-  <codegen
-  classname="wfrmhrRepository"
-  namespace="wfrmhr"/>
-  <rootfolder
-  name="Root"
-  id="90584611-5862-417c-b693-c9003ea6109c"
-  searchtimeout="30000ms"
-  capname="unknown"
-  isrooted="True"
-  usecache="True">
-      <appfolder
-          addcaps="container,webdocument"
-          capname="webdocument"
-          id="a75dfc80-d9e3-495d-b2a9-4fba3120ed8b"
-          isrooted="True"
-          name="ApplicationUnderTest"
-          searchtimeout="30000ms"
-          usecache="False">
-          <basepath>
-              /dom[@domain='d1wfapps.vividsolutions.com']
-          </basepath>
-          <icon>
-iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+﻿<repository
+id="d78d9a6f-6d44-4cda-a8f0-96f639c17428"
+name="wfrmhrRepository">
+	<codegen
+	classname="wfrmhrRepository"
+	namespace="wfrmhr">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="90584611-5862-417c-b693-c9003ea6109c"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="a75dfc80-d9e3-495d-b2a9-4fba3120ed8b"
+		isrooted="True"
+		name="ApplicationUnderTest"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="9b84029e-17c5-43a3-8989-b66976745059"
+			name="HttpsD1wfappsVividsolutionsComPub"
+			refimgid="91b14bd2-913f-4503-b814-ab0fd0703836"
+			refpath="/dom[@domain='d1wfapps.vividsolutions.com']//div[#'wfrmMain']/tag/tag/div[2]/div[3]/tag/div[2]/div/a[3]"
+			robustPath="/dom[@domain='d1wfapps.vividsolutions.com']//div[#'wfrmMain']//tag[@tagname='wf-menu']/div[2]/div/a[3]"
+			searchtimeout="30000ms">
+				/dom[@domain='d1wfapps.vividsolutions.com']//div[#'wfrmMain']/?/?/tag[@tagname='wf-application']/div[2]/div[3]/tag/div[2]/div/a[3]
+			</item>
+			<item
+			addcaps="unknown,webelement,tdtag"
+			capname="tdtag"
+			id="3ed16c87-ee8d-4801-831d-98b916c06940"
+			name="CdkCellCdkColumnNameMatCellMatCo"
+			refimgid="d92ad0ea-43a4-4649-97d3-21297d9bb7c9"
+			refpath="/dom[@domain='d1wfapps.vividsolutions.com']//div[#'core-interface-container']/div/tag[@tagname='wfrm-assignments-container-desktop']/tag/tag/div/div/div/div[4]/table/tbody/tr[1]/td[2]"
+			robustPath="/dom[@domain='d1wfapps.vividsolutions.com']//div[#'core-interface-container']//tbody/tr[1]/td[2]"
+			searchtimeout="30000ms">
+				/dom[@domain='d1wfapps.vividsolutions.com']//div[#'core-interface-container']//tag[@tagname='base-wrapper']/div/div/div/div[4]/table/tbody/tr[1]/td[2]
+			</item>
+			<item
+			addcaps="unknown,webelement,tdtag"
+			capname="tdtag"
+			id="a2792ee2-a664-4dde-a052-c367114fb497"
+			name="RaptorsII"
+			refimgid="ad4fccbd-06a8-42c3-8519-beee16c60ee5"
+			refpath="/dom[@domain='d1wfapps.vividsolutions.com']//div[#'core-interface-container']/div/tag[@tagname='wfrm-assignment-detail-container']/tag/tag/div/div/div[2]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/tag/div/tag/tag[@tagname='wfrm-assignment-detail-resources-container']/tag/tag/tag/div/div/div/div/div/div[2]/div/table/tbody/tr[2]/td[@innertext='Raptors II']"
+			robustPath="/dom[@domain='d1wfapps.vividsolutions.com']//div[#'core-interface-container']//td[@innertext='Raptors II']"
+			searchtimeout="30000ms">
+				/dom[@domain='d1wfapps.vividsolutions.com']//div[#'core-interface-container']/div//tag[@tagname='base-wrapper']/div/div/div[2]/tag[@tagname='mat-tab-group']/div/tag[1]/div/?/?/tag[@tagname='wfrm-assignment-detail-sections']/div//tag[@tagname='wfrm-assignment-detail-resources-desktop']/tag[@tagname='wfrm-base-expansion-panel']/tag[@tagname='mat-expansion-panel']/div/div/div/div/div/div[2]/div/table/tbody/tr[2]/td[@innertext='Raptors II']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="38e241c6-b8cf-4247-bfc4-d282b0239541"
+			name="SpanTagCancel"
+			refimgid="92f7478d-a555-42a5-8c27-3084ffbb5636"
+			refpath="/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[5]/div/tag/div[2]/div[2]/button[1]/span[@innertext=' Cancel ']"
+			robustPath="/dom[@domain='d1wfapps.vividsolutions.com']//span[@innertext=' Cancel ']"
+			searchtimeout="30000ms">
+				/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[5]/?/?/tag[@tagname='owl-date-time-container']/div[2]/div[2]/button[1]/span[@innertext=' Cancel ']
+			</item>
+			<folder
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="b157edf8-289c-4dbb-acfc-366af3c78a3b"
+			isrooted="True"
+			name="CdkGlobalOverlayWrapper"
+			refpath="/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[3]"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="58fd4861-98b3-49b2-b439-eefb8794a13b"
+				name="Text"
+				refimgid="63d18d99-78de-49b7-b9e4-d0d6feed586a"
+				refpath="/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[3]/div/tag[@tagname='mat-dialog-container']/tag/tag/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[3]/div[2]/tag/div/div[1]/div/div/input[2]"
+				robustPath="/dom[@domain='d1wfapps.vividsolutions.com']//tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[3]/div[2]/tag[@tagname='mat-form-field']/div/div[1]/div/div/input[2]"
+				searchtimeout="30000ms">
+					/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[3]//tag[@tagname='wfrm-base-dialog']/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[3]/div[2]/tag/div/div[1]/div/div/input[2]
+				</item>
+				<item
+				addcaps="unknown,webelement,textareatag"
+				capname="textareatag"
+				id="238d4119-0da4-4cb1-b25f-c8f42dd444ce"
+				name="False"
+				refimgid="29657e0c-6291-4fb4-a29b-f20b3bfbf089"
+				refpath="/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[3]/div/tag[@tagname='mat-dialog-container']/tag/tag/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[4]/div[2]/tag/div/div[1]/div/textarea[@required='False']"
+				robustPath="/dom[@domain='d1wfapps.vividsolutions.com']//tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[4]/div[2]/tag[@tagname='mat-form-field']/div/div[1]/div/textarea[@required='False']"
+				searchtimeout="30000ms">
+					/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[3]//tag[@tagname='wfrm-base-dialog']/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[4]/div[2]/tag/div/div[1]/?/?/textarea[@required='False']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="d39a867a-d5e1-4a6d-9ad2-95ff07e1321a"
+				name="MatRadioOuterCircle"
+				refimgid="ab3c9643-9d80-4864-9169-d03d2bc54419"
+				refpath="/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[3]/div/tag[@tagname='mat-dialog-container']/tag/tag/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div/div/tag/div/div[1]/div/tag[@tagname='mat-radio-group']/tag[2]/label/span[1]/span[1]"
+				robustPath="/dom[@domain='d1wfapps.vividsolutions.com']//tag[@tagname='mat-radio-group']/tag[2]/label/span[1]/span[1]"
+				searchtimeout="30000ms">
+					/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[3]/div//tag[@tagname='wfrm-base-dialog']/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div/div/tag/div/div[1]/div/tag[@tagname='mat-radio-group']/tag[2]/label/span[1]/span[1]
+				</item>
+				<basepath>
+					/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[3]
+				</basepath>
+			</folder>
+			<basepath>
+				/dom[@domain='d1wfapps.vividsolutions.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
 AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
 dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
 yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
@@ -37,9 +127,11 @@ lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
 zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
 8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
 F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
-          </icon>
-      </appfolder>
-      <basepath/>
-  </rootfolder>
-  <variables/>
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
 </repository>
