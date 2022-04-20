@@ -90,6 +90,10 @@ namespace wfrmhr
             RepoItemInfo _cdkcellcdkcolumnnamematcellmatcoInfo;
             RepoItemInfo _raptorsiiInfo;
             RepoItemInfo _spantagcancelInfo;
+            RepoItemInfo _assignmentsInfo;
+            RepoItemInfo _centreInfo;
+            RepoItemInfo _ruchitestmanifestInfo;
+            RepoItemInfo _matradiooutercircleInfo;
 
             /// <summary>
             /// Creates a new ApplicationUnderTest  folder.
@@ -102,6 +106,10 @@ namespace wfrmhr
                 _cdkcellcdkcolumnnamematcellmatcoInfo = new RepoItemInfo(this, "CdkCellCdkColumnNameMatCellMatCo", ".//div[#'core-interface-container']//tag[@tagname='base-wrapper']/div/div/div/div[4]/table/tbody/tr[1]/td[2]", ".//div[#'core-interface-container']//tbody/tr[1]/td[2]", 30000, null, "3ed16c87-ee8d-4801-831d-98b916c06940");
                 _raptorsiiInfo = new RepoItemInfo(this, "RaptorsII", ".//div[#'core-interface-container']/div//tag[@tagname='base-wrapper']/div/div/div[2]/tag[@tagname='mat-tab-group']/div/tag[1]/div/?/?/tag[@tagname='wfrm-assignment-detail-sections']/div//tag[@tagname='wfrm-assignment-detail-resources-desktop']/tag[@tagname='wfrm-base-expansion-panel']/tag[@tagname='mat-expansion-panel']/div/div/div/div/div/div[2]/div/table/tbody/tr[2]/td[@innertext='Raptors II']", ".//div[#'core-interface-container']//td[@innertext='Raptors II']", 30000, null, "a2792ee2-a664-4dde-a052-c367114fb497");
                 _spantagcancelInfo = new RepoItemInfo(this, "SpanTagCancel", "body/div[5]/div[5]/?/?/tag[@tagname='owl-date-time-container']/div[2]/div[2]/button[1]/span[@innertext=' Cancel ']", ".//span[@innertext=' Cancel ']", 30000, null, "38e241c6-b8cf-4247-bfc4-d282b0239541");
+                _assignmentsInfo = new RepoItemInfo(this, "Assignments", ".//div[#'wfrmMain']/?/?/tag[@tagname='wf-application']/div[2]/div[3]/tag/div[2]/div/a[3]/span[@innertext='Assignments']", ".//div[#'wfrmMain']//span[@innertext='Assignments']", 30000, null, "e756ede4-32d2-4bcb-a6c2-cd68d21ab46f");
+                _centreInfo = new RepoItemInfo(this, "Centre", ".//div[#'core-interface-container']//tag[@tagname='base-wrapper']/div/div/div/div[4]/table/tbody/tr[1]/td[1]/span[@innertext='Centre']", ".//div[#'core-interface-container']//tbody/tr[1]/td[1]/span[@innertext='Centre']", 30000, null, "67186c17-4f64-4e47-a60f-521a0525a0c8");
+                _ruchitestmanifestInfo = new RepoItemInfo(this, "RuchiTestManifest", ".//div[#'core-interface-container']/div//tag[@tagname='base-wrapper']/div/div/div[2]/tag[@tagname='mat-tab-group']/div/tag[1]/div/?/?/tag[@tagname='wfrm-assignment-detail-sections']/div//tag[@tagname='wfrm-assignment-detail-resources-desktop']/tag[@tagname='wfrm-base-expansion-panel']/tag[@tagname='mat-expansion-panel']/div/div/div/div/div/div[2]/div/table/tbody/tr[1]/td[@innertext='Ruchi Test Manifest']", ".//div[#'core-interface-container']//td[@innertext='Ruchi Test Manifest']", 30000, null, "f2adb0d5-31db-4bc8-9baf-ac0af45d0089");
+                _matradiooutercircleInfo = new RepoItemInfo(this, "MatRadioOuterCircle", "body/div[5]/div[4]//tag[@tagname='wfrm-base-dialog']/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[1]/?/?/tag[@tagname='mat-form-field']/div/div[1]/?/?/tag[@tagname='mat-radio-group']/tag[2]/label/span[1]/span[1]", ".//tag[@tagname='mat-radio-group']/tag[2]/label/span[1]/span[1]", 30000, null, "0234fdd1-c4b4-4ced-97c7-5a537e4475b2");
             }
 
             /// <summary>
@@ -221,6 +229,102 @@ namespace wfrmhr
                 get
                 {
                     return _spantagcancelInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Assignments item.
+            /// </summary>
+            [RepositoryItem("e756ede4-32d2-4bcb-a6c2-cd68d21ab46f")]
+            public virtual Ranorex.SpanTag Assignments
+            {
+                get
+                {
+                    return _assignmentsInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Assignments item info.
+            /// </summary>
+            [RepositoryItemInfo("e756ede4-32d2-4bcb-a6c2-cd68d21ab46f")]
+            public virtual RepoItemInfo AssignmentsInfo
+            {
+                get
+                {
+                    return _assignmentsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Centre item.
+            /// </summary>
+            [RepositoryItem("67186c17-4f64-4e47-a60f-521a0525a0c8")]
+            public virtual Ranorex.SpanTag Centre
+            {
+                get
+                {
+                    return _centreInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Centre item info.
+            /// </summary>
+            [RepositoryItemInfo("67186c17-4f64-4e47-a60f-521a0525a0c8")]
+            public virtual RepoItemInfo CentreInfo
+            {
+                get
+                {
+                    return _centreInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RuchiTestManifest item.
+            /// </summary>
+            [RepositoryItem("f2adb0d5-31db-4bc8-9baf-ac0af45d0089")]
+            public virtual Ranorex.TdTag RuchiTestManifest
+            {
+                get
+                {
+                    return _ruchitestmanifestInfo.CreateAdapter<Ranorex.TdTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RuchiTestManifest item info.
+            /// </summary>
+            [RepositoryItemInfo("f2adb0d5-31db-4bc8-9baf-ac0af45d0089")]
+            public virtual RepoItemInfo RuchiTestManifestInfo
+            {
+                get
+                {
+                    return _ruchitestmanifestInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MatRadioOuterCircle item.
+            /// </summary>
+            [RepositoryItem("0234fdd1-c4b4-4ced-97c7-5a537e4475b2")]
+            public virtual Ranorex.SpanTag MatRadioOuterCircle
+            {
+                get
+                {
+                    return _matradiooutercircleInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MatRadioOuterCircle item info.
+            /// </summary>
+            [RepositoryItemInfo("0234fdd1-c4b4-4ced-97c7-5a537e4475b2")]
+            public virtual RepoItemInfo MatRadioOuterCircleInfo
+            {
+                get
+                {
+                    return _matradiooutercircleInfo;
                 }
             }
 

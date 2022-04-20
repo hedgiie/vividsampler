@@ -79,24 +79,25 @@ namespace wfrmhr
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.HttpsD1wfappsVividsolutionsComPub' at 42;20.", repo.ApplicationUnderTest.HttpsD1wfappsVividsolutionsComPubInfo, new RecordItemIndex(0));
-            repo.ApplicationUnderTest.HttpsD1wfappsVividsolutionsComPub.Click("42;20");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click at {X=0,Y=0}.", new RecordItemIndex(0));
+            Mouse.MoveTo(0, 0);
+            Mouse.Click(System.Windows.Forms.MouseButtons.Left);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CdkCellCdkColumnNameMatCellMatCo' at 58;26.", repo.ApplicationUnderTest.CdkCellCdkColumnNameMatCellMatCoInfo, new RecordItemIndex(1));
-            repo.ApplicationUnderTest.CdkCellCdkColumnNameMatCellMatCo.Click("58;26");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Assignments' at 35;8.", repo.ApplicationUnderTest.AssignmentsInfo, new RecordItemIndex(1));
+            repo.ApplicationUnderTest.Assignments.Click("35;8");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.RaptorsII' at 82;15.", repo.ApplicationUnderTest.RaptorsIIInfo, new RecordItemIndex(2));
-            repo.ApplicationUnderTest.RaptorsII.Click("82;15");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Centre' at 28;5.", repo.ApplicationUnderTest.CentreInfo, new RecordItemIndex(2));
+            repo.ApplicationUnderTest.Centre.Click("28;5");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CdkGlobalOverlayWrapper.MatRadioOuterCircle' at 6;10.", repo.ApplicationUnderTest.CdkGlobalOverlayWrapper.MatRadioOuterCircleInfo, new RecordItemIndex(3));
-            repo.ApplicationUnderTest.CdkGlobalOverlayWrapper.MatRadioOuterCircle.Click("6;10");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.RuchiTestManifest' at 65;18.", repo.ApplicationUnderTest.RuchiTestManifestInfo, new RecordItemIndex(3));
+            repo.ApplicationUnderTest.RuchiTestManifest.Click("65;18");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CdkGlobalOverlayWrapper.Text' at 43;11.", repo.ApplicationUnderTest.CdkGlobalOverlayWrapper.TextInfo, new RecordItemIndex(4));
-            repo.ApplicationUnderTest.CdkGlobalOverlayWrapper.Text.Click("43;11");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.MatRadioOuterCircle' at 9;10.", repo.ApplicationUnderTest.MatRadioOuterCircleInfo, new RecordItemIndex(4));
+            repo.ApplicationUnderTest.MatRadioOuterCircle.Click("9;10");
             Delay.Milliseconds(0);
             
         }

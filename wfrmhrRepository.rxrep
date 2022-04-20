@@ -110,6 +110,50 @@ name="wfrmhrRepository">
 					/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[3]
 				</basepath>
 			</folder>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="e756ede4-32d2-4bcb-a6c2-cd68d21ab46f"
+			name="Assignments"
+			refimgid="c0c831dd-b860-422a-8a50-2d94a3c578ef"
+			refpath="/dom[@domain='d1wfapps.vividsolutions.com']//div[#'wfrmMain']/tag/tag/div[2]/div[3]/tag/div[2]/div/a[3]/span[@innertext='Assignments']"
+			robustPath="/dom[@domain='d1wfapps.vividsolutions.com']//div[#'wfrmMain']//span[@innertext='Assignments']"
+			searchtimeout="30000ms">
+				/dom[@domain='d1wfapps.vividsolutions.com']//div[#'wfrmMain']/?/?/tag[@tagname='wf-application']/div[2]/div[3]/tag/div[2]/div/a[3]/span[@innertext='Assignments']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="67186c17-4f64-4e47-a60f-521a0525a0c8"
+			name="Centre"
+			refimgid="329ef9fb-471c-4227-8447-dc0653824466"
+			refpath="/dom[@domain='d1wfapps.vividsolutions.com']//div[#'core-interface-container']/div/tag[@tagname='wfrm-assignments-container-desktop']/tag/tag/div/div/div/div[4]/table/tbody/tr[1]/td[1]/span[@innertext='Centre']"
+			robustPath="/dom[@domain='d1wfapps.vividsolutions.com']//div[#'core-interface-container']//tbody/tr[1]/td[1]/span[@innertext='Centre']"
+			searchtimeout="30000ms">
+				/dom[@domain='d1wfapps.vividsolutions.com']//div[#'core-interface-container']//tag[@tagname='base-wrapper']/div/div/div/div[4]/table/tbody/tr[1]/td[1]/span[@innertext='Centre']
+			</item>
+			<item
+			addcaps="unknown,webelement,tdtag"
+			capname="tdtag"
+			id="f2adb0d5-31db-4bc8-9baf-ac0af45d0089"
+			name="RuchiTestManifest"
+			refimgid="348b108e-84c4-4447-ad33-bf4187db5abd"
+			refpath="/dom[@domain='d1wfapps.vividsolutions.com']//div[#'core-interface-container']/div/tag[@tagname='wfrm-assignment-detail-container']/tag/tag/div/div/div[2]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/tag/div/tag/tag[@tagname='wfrm-assignment-detail-resources-container']/tag/tag/tag/div/div/div/div/div/div[2]/div/table/tbody/tr[1]/td[@innertext='Ruchi Test Manifest']"
+			robustPath="/dom[@domain='d1wfapps.vividsolutions.com']//div[#'core-interface-container']//td[@innertext='Ruchi Test Manifest']"
+			searchtimeout="30000ms">
+				/dom[@domain='d1wfapps.vividsolutions.com']//div[#'core-interface-container']/div//tag[@tagname='base-wrapper']/div/div/div[2]/tag[@tagname='mat-tab-group']/div/tag[1]/div/?/?/tag[@tagname='wfrm-assignment-detail-sections']/div//tag[@tagname='wfrm-assignment-detail-resources-desktop']/tag[@tagname='wfrm-base-expansion-panel']/tag[@tagname='mat-expansion-panel']/div/div/div/div/div/div[2]/div/table/tbody/tr[1]/td[@innertext='Ruchi Test Manifest']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="0234fdd1-c4b4-4ced-97c7-5a537e4475b2"
+			name="MatRadioOuterCircle"
+			refimgid="c3cc8a0a-5fe5-44a7-8f7a-6ef1cf47da80"
+			refpath="/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[4]/div/tag[@tagname='mat-dialog-container']/tag/tag/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[1]/div/tag/div/div[1]/div/tag[@tagname='mat-radio-group']/tag[2]/label/span[1]/span[1]"
+			robustPath="/dom[@domain='d1wfapps.vividsolutions.com']//tag[@tagname='mat-radio-group']/tag[2]/label/span[1]/span[1]"
+			searchtimeout="30000ms">
+				/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[4]//tag[@tagname='wfrm-base-dialog']/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[1]/?/?/tag[@tagname='mat-form-field']/div/div[1]/?/?/tag[@tagname='mat-radio-group']/tag[2]/label/span[1]/span[1]
+			</item>
 			<basepath>
 				/dom[@domain='d1wfapps.vividsolutions.com']
 			</basepath>
