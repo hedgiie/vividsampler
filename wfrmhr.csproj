@@ -121,6 +121,18 @@
       <UserCode>true</UserCode>
       <id>e973e43a-5d07-4c2a-af69-9d2014c063a6</id>
     </Compile>
+    <Compile Include="VehicleAndAccomodationDetails.cs">
+      <BoundTo>90e2dcda-748a-4eec-9c08-394dc942e010</BoundTo>
+      <DependentUpon>VehicleAndAccomodationDetails.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9c9a24b8-b2e0-4b90-96b3-149655a64b8f</id>
+    </Compile>
+    <Compile Include="VehicleAndAccomodationDetails.UserCode.cs">
+      <BoundTo>90e2dcda-748a-4eec-9c08-394dc942e010</BoundTo>
+      <DependentUpon>VehicleAndAccomodationDetails.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>95fc2aac-b5cf-4896-a831-9f6fbdac5bd4</id>
+    </Compile>
     <Compile Include="wfrmhrRepository.cs">
       <BoundTo>111e3323-63f7-453a-90bd-be854868f420</BoundTo>
       <DependentUpon>wfrmhrRepository.rxrep</DependentUpon>
@@ -146,6 +158,11 @@
       <BoundTo>111e3323-63f7-453a-90bd-be854868f420</BoundTo>
       <id>5a15cd83-efa7-4e71-8a73-a5b1c0b14f89</id>
       <recordtableid>99de563f-31c6-482b-a844-76c0030a7ce5</recordtableid>
+    </None>
+    <None Include="VehicleAndAccomodationDetails.rxrec">
+      <BoundTo>111e3323-63f7-453a-90bd-be854868f420</BoundTo>
+      <id>90e2dcda-748a-4eec-9c08-394dc942e010</id>
+      <recordtableid>68b800d0-0566-4a61-ae81-3ee4280a3e47</recordtableid>
     </None>
     <None Include="wfrmhrRepository.rximg">
       <BoundTo>111e3323-63f7-453a-90bd-be854868f420</BoundTo>
