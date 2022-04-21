@@ -109,9 +109,9 @@ namespace wfrmhr
             Mouse.ButtonUp(System.Windows.Forms.MouseButtons.Left);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1q3451;jfdcpjp34;jr1p23rj1p2o9rjokje{r up}poc9jqpw[34j{p up}rpo329ufpjasp;odjf{a up}{p up}{s up}po394{f up}jtr{3 up}poj{t up}3porj13p2oj5{1 up}{3 up}r{p up}{o up}{j up}' with focus on 'ApplicationUnderTest'.", repo.ApplicationUnderTest.SelfInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '33vsadfadfa43rt124343434343433ffffffffffffffffasdf@@@@@@@@@##$%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#%@' with focus on 'ApplicationUnderTest'.", repo.ApplicationUnderTest.SelfInfo, new RecordItemIndex(7));
             repo.ApplicationUnderTest.Self.EnsureVisible();
-            Keyboard.Press("1q3451;jfdcpjp34;jr1p23rj1p2o9rjokje{r up}poc9jqpw[34j{p up}rpo329ufpjasp;odjf{a up}{p up}{s up}po394{f up}jtr{3 up}poj{t up}3porj13p2oj5{1 up}{3 up}r{p up}{o up}{j up}");
+            Keyboard.Press("33vsadfadfa43rt124343434343433ffffffffffffffffasdf@@@@@@@@@##$%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#%@");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FormFlexWrapperNgPristineNgTouched.False1' at 223;16.", repo.ApplicationUnderTest.FormFlexWrapperNgPristineNgTouched.False1Info, new RecordItemIndex(8));
@@ -126,8 +126,8 @@ namespace wfrmhr
             repo.ApplicationUnderTest.FormFlexWrapperNgPristineNgTouched.False1.Click("223;16");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '343434kl;nl;kjk;j;kj;j;j;jkl;jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjdddddddddddddddddd' with focus on 'ApplicationUnderTest.FormFlexWrapperNgPristineNgTouched.False1'.", repo.ApplicationUnderTest.FormFlexWrapperNgPristineNgTouched.False1Info, new RecordItemIndex(11));
-            repo.ApplicationUnderTest.FormFlexWrapperNgPristineNgTouched.False1.PressKeys("343434kl;nl;kjk;j;kj;j;j;jkl;jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjdddddddddddddddddd");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '33 @##vvddd##@@@@@@@@@@$ test that any character can be typed in no validatn' with focus on 'ApplicationUnderTest.FormFlexWrapperNgPristineNgTouched.False1'.", repo.ApplicationUnderTest.FormFlexWrapperNgPristineNgTouched.False1Info, new RecordItemIndex(11));
+            repo.ApplicationUnderTest.FormFlexWrapperNgPristineNgTouched.False1.PressKeys("33 @##vvddd##@@@@@@@@@@$ test that any character can be typed in no validatn");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.False' at 139;6.", repo.ApplicationUnderTest.FalseInfo, new RecordItemIndex(12));
