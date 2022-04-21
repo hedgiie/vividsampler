@@ -79,26 +79,64 @@ namespace wfrmhr
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click at {X=0,Y=0}.", new RecordItemIndex(0));
-            Mouse.MoveTo(0, 0);
-            Mouse.Click(System.Windows.Forms.MouseButtons.Left);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Assignments' at 35;8.", repo.ApplicationUnderTest.AssignmentsInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Assignments' at 35;8.", repo.ApplicationUnderTest.AssignmentsInfo, new RecordItemIndex(0));
             repo.ApplicationUnderTest.Assignments.Click("35;8");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Centre' at 28;5.", repo.ApplicationUnderTest.CentreInfo, new RecordItemIndex(2));
-            repo.ApplicationUnderTest.Centre.Click("28;5");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.CdkCellCdkColumnTypeMatCellMatCo' at 95;21.", repo.ApplicationUnderTest.CdkCellCdkColumnTypeMatCellMatCoInfo, new RecordItemIndex(1));
+            repo.ApplicationUnderTest.CdkCellCdkColumnTypeMatCellMatCo.Click("95;21");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.RuchiTestManifest' at 65;18.", repo.ApplicationUnderTest.RuchiTestManifestInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.RuchiTestManifest' at 65;18.", repo.ApplicationUnderTest.RuchiTestManifestInfo, new RecordItemIndex(2));
             repo.ApplicationUnderTest.RuchiTestManifest.Click("65;18");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.MatRadioOuterCircle' at 9;10.", repo.ApplicationUnderTest.MatRadioOuterCircleInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.MatRadioOuterCircle' at 9;10.", repo.ApplicationUnderTest.MatRadioOuterCircleInfo, new RecordItemIndex(3));
             repo.ApplicationUnderTest.MatRadioOuterCircle.Click("9;10");
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.False' at 139;6.", repo.ApplicationUnderTest.FalseInfo, new RecordItemIndex(4));
+            repo.ApplicationUnderTest.False.Click("139;6");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Down item 'ApplicationUnderTest.False' at 152;7.", repo.ApplicationUnderTest.FalseInfo, new RecordItemIndex(5));
+            repo.ApplicationUnderTest.False.MoveTo("152;7");
+            Mouse.ButtonDown(System.Windows.Forms.MouseButtons.Left);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Up item 'ApplicationUnderTest.False' at -15;4.", repo.ApplicationUnderTest.FalseInfo, new RecordItemIndex(6));
+            repo.ApplicationUnderTest.False.MoveTo("-15;4");
+            Mouse.ButtonUp(System.Windows.Forms.MouseButtons.Left);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1q3451;jfdcpjp34;jr1p23rj1p2o9rjokje{r up}poc9jqpw[34j{p up}rpo329ufpjasp;odjf{a up}{p up}{s up}po394{f up}jtr{3 up}poj{t up}3porj13p2oj5{1 up}{3 up}r{p up}{o up}{j up}' with focus on 'ApplicationUnderTest'.", repo.ApplicationUnderTest.SelfInfo, new RecordItemIndex(7));
+            repo.ApplicationUnderTest.Self.EnsureVisible();
+            Keyboard.Press("1q3451;jfdcpjp34;jr1p23rj1p2o9rjokje{r up}poc9jqpw[34j{p up}rpo329ufpjasp;odjf{a up}{p up}{s up}po394{f up}jtr{3 up}poj{t up}3porj13p2oj5{1 up}{3 up}r{p up}{o up}{j up}");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FormFlexWrapperNgPristineNgTouched.False1' at 223;16.", repo.ApplicationUnderTest.FormFlexWrapperNgPristineNgTouched.False1Info, new RecordItemIndex(8));
+            repo.ApplicationUnderTest.FormFlexWrapperNgPristineNgTouched.False1.Click("223;16");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Value cannot exceed 75 characters') on item 'ApplicationUnderTest.ValueCannotExceed75Characters'.", repo.ApplicationUnderTest.ValueCannotExceed75CharactersInfo, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.ApplicationUnderTest.ValueCannotExceed75CharactersInfo, "InnerText", "Value cannot exceed 75 characters");
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FormFlexWrapperNgPristineNgTouched.False1' at 223;16.", repo.ApplicationUnderTest.FormFlexWrapperNgPristineNgTouched.False1Info, new RecordItemIndex(10));
+            repo.ApplicationUnderTest.FormFlexWrapperNgPristineNgTouched.False1.Click("223;16");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '343434kl;nl;kjk;j;kj;j;j;jkl;jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjdddddddddddddddddd' with focus on 'ApplicationUnderTest.FormFlexWrapperNgPristineNgTouched.False1'.", repo.ApplicationUnderTest.FormFlexWrapperNgPristineNgTouched.False1Info, new RecordItemIndex(11));
+            repo.ApplicationUnderTest.FormFlexWrapperNgPristineNgTouched.False1.PressKeys("343434kl;nl;kjk;j;kj;j;j;jkl;jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjdddddddddddddddddd");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.False' at 139;6.", repo.ApplicationUnderTest.FalseInfo, new RecordItemIndex(12));
+            repo.ApplicationUnderTest.False.Click("139;6");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Value cannot exceed 75 characters') on item 'ApplicationUnderTest.FormFlexWrapperNgPristineNgTouched.ValueCannotExceed75Characters1'.", repo.ApplicationUnderTest.FormFlexWrapperNgPristineNgTouched.ValueCannotExceed75Characters1Info, new RecordItemIndex(13));
+            Validate.AttributeEqual(repo.ApplicationUnderTest.FormFlexWrapperNgPristineNgTouched.ValueCannotExceed75Characters1Info, "InnerText", "Value cannot exceed 75 characters");
+            Delay.Milliseconds(100);
             
         }
 

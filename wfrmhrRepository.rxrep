@@ -18,6 +18,7 @@ name="wfrmhrRepository">
 		id="a75dfc80-d9e3-495d-b2a9-4fba3120ed8b"
 		isrooted="True"
 		name="ApplicationUnderTest"
+		refimgid="8d730d5c-7e4a-4970-bfca-bbab6d28274c"
 		searchtimeout="30000ms"
 		usecache="False">
 			<item
@@ -106,6 +107,17 @@ name="wfrmhrRepository">
 				searchtimeout="30000ms">
 					/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[3]/div//tag[@tagname='wfrm-base-dialog']/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div/div/tag/div/div[1]/div/tag[@tagname='mat-radio-group']/tag[2]/label/span[1]/span[1]
 				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="2a941724-8443-4545-bef3-33921d4a64b2"
+				name="CdkOverlayBackdropCdkOverlayTranspa"
+				refimgid="7e0c4f0d-1a1e-4283-a61c-f642ac3caffd"
+				refpath="/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[3]"
+				robustPath="/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[3]"
+				searchtimeout="30000ms">
+					/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[3]
+				</item>
 				<basepath>
 					/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[3]
 				</basepath>
@@ -149,11 +161,142 @@ name="wfrmhrRepository">
 			id="0234fdd1-c4b4-4ced-97c7-5a537e4475b2"
 			name="MatRadioOuterCircle"
 			refimgid="c3cc8a0a-5fe5-44a7-8f7a-6ef1cf47da80"
-			refpath="/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[4]/div/tag[@tagname='mat-dialog-container']/tag/tag/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[1]/div/tag/div/div[1]/div/tag[@tagname='mat-radio-group']/tag[2]/label/span[1]/span[1]"
-			robustPath="/dom[@domain='d1wfapps.vividsolutions.com']//tag[@tagname='mat-radio-group']/tag[2]/label/span[1]/span[1]"
+			robustPath="/dom[@domain='d1wfapps.vividsolutions.com']//tag[@tagname='mat-radio-group']/tag[2]/label/span[1]"
 			searchtimeout="30000ms">
-				/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[4]//tag[@tagname='wfrm-base-dialog']/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[1]/?/?/tag[@tagname='mat-form-field']/div/div[1]/?/?/tag[@tagname='mat-radio-group']/tag[2]/label/span[1]/span[1]
+				/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[2]//tag[@tagname='wfrm-base-dialog']/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[1]/div/tag/div/div[1]/div/tag[@tagname='mat-radio-group']/tag[2]/label/span[1]
 			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="0535a729-5d8b-4515-b5a4-2e6b9056db69"
+			name="SomeInputTag"
+			refimgid="de37c708-0a93-45cb-974d-86113fecb779"
+			refpath="/dom[@domain='d1wfapps.vividsolutions.com']/body/form/div/div/div/input"
+			robustPath="/dom[@domain='d1wfapps.vividsolutions.com']/?/?/form/div/div/div/input"
+			searchtimeout="30000ms">
+				/dom[@domain='d1wfapps.vividsolutions.com']/body/form//input
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="f755896c-e3e6-43fe-ab68-9172989f6c6e"
+			name="ActionButtonWrapperMatDialogActions"
+			refimgid="2404019d-3548-4f1a-804b-13aa54ba87bd"
+			refpath="/dom[1]/body/div[5]/div[2]/div/tag[@tagname='mat-dialog-container']/tag/tag/div[2]/div[2]"
+			robustPath="/dom[@domain='d1wfapps.vividsolutions.com']//tag[@tagname='wfrm-base-dialog']/div[2]/div[2]"
+			searchtimeout="30000ms">
+				/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[2]//tag[@tagname='wfrm-base-dialog']/div[2]/div[2]
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="2ed7905b-2c1a-4b47-a7d2-be0da3f9cfdb"
+			name="MatCheckboxInnerContainer"
+			refimgid="351a0a71-c6d5-4cd5-b20c-89e12fb297c0"
+			refpath="/dom[1]/body/div[4]/div[2]/div/tag[@tagname='mat-dialog-container']/tag/tag/div[2]/div[2]/tag[@tagname='mat-checkbox']/label/span[1]"
+			robustPath="/dom[@domain='d1wfapps.vividsolutions.com']//label/span[1]"
+			searchtimeout="30000ms">
+				/dom[@domain='d1wfapps.vividsolutions.com']/body/div[4]/div[2]//tag[@tagname='wfrm-base-dialog']/div[2]/div[2]/?/?/label/span[1]
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="970cf806-e42a-4891-820e-1d7697220cc7"
+			name="SpanTagOK"
+			refimgid="9386ddc4-e86d-413b-a4bd-36cdfe9bcfb3"
+			refpath="/dom[1]/body/div[4]/div[2]/div/tag[@tagname='mat-dialog-container']/tag/tag/div[2]/div[2]/button/span[@innertext='OK']"
+			robustPath="/dom[@domain='d1wfapps.vividsolutions.com']//span[@innertext='OK']"
+			searchtimeout="30000ms">
+				/dom[@domain='d1wfapps.vividsolutions.com']/body/div[4]//tag[@tagname='wfrm-base-dialog']/div[2]/div[2]/button/span[@innertext='OK']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="2411c7fc-b0fd-4295-9df1-25860c31524d"
+			name="MatRadioInnerCircle"
+			refimgid="f5f534ff-c411-46d4-9a52-cc08750055fe"
+			refpath="/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[2]/div/tag[@tagname='mat-dialog-container']/tag/tag/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[1]/div/tag/div/div[1]/div/tag[@tagname='mat-radio-group']/tag[2]/label/span[1]/span[2]"
+			robustPath="/dom[@domain='d1wfapps.vividsolutions.com']//tag[@tagname='mat-radio-group']/tag[2]/label/span[1]/span[2]"
+			searchtimeout="30000ms">
+				/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[2]//tag[@tagname='wfrm-base-dialog']/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[1]/div/tag/div/div[1]/div/tag[@tagname='mat-radio-group']/tag[2]/label/span[1]/span[2]
+			</item>
+			<item
+			addcaps="unknown,webelement,tdtag"
+			capname="tdtag"
+			id="be6ebb7f-5208-4f4d-8d17-98e8a948a53d"
+			name="CdkCellCdkColumnTypeMatCellMatCo"
+			refimgid="a1e60517-d8c0-4965-abbd-925d5aa296e1"
+			refpath="/dom[@domain='d1wfapps.vividsolutions.com']//div[#'core-interface-container']/div/tag[@tagname='wfrm-assignments-container-desktop']/tag/tag/div/div/div/div[4]/table/tbody/tr[1]/td[1]"
+			robustPath="/dom[@domain='d1wfapps.vividsolutions.com']//div[#'core-interface-container']//tbody/tr[1]/td[1]"
+			searchtimeout="30000ms">
+				/dom[@domain='d1wfapps.vividsolutions.com']//div[#'core-interface-container']//tag[@tagname='base-wrapper']/div/div/div/div[4]/table/tbody/tr[1]/td[1]
+			</item>
+			<item
+			addcaps="unknown,webelement,textareatag"
+			capname="textareatag"
+			id="fc084010-7e81-42fc-84e4-c7b3cccf5e41"
+			name="False"
+			refimgid="bb4d1c64-fb12-47f6-ac9a-abf4903642e4"
+			refpath="/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[2]/div/tag[@tagname='mat-dialog-container']/tag/tag/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[5]/div/tag/div/div[1]/div/textarea[@required='False']"
+			robustPath="/dom[@domain='d1wfapps.vividsolutions.com']//tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[5]/div/tag[@tagname='mat-form-field']/div/div[1]/div/textarea[@required='False']"
+			searchtimeout="30000ms">
+				/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[2]/div//tag[@tagname='wfrm-base-dialog']/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[5]/?/?/tag[@tagname='mat-form-field']/div/div[1]/?/?/textarea[@required='False']
+			</item>
+			<item
+			addcaps="unknown,webelement"
+			capname="webelement"
+			id="05fc019b-95ed-4570-a20e-53a794182f8c"
+			name="ValueCannotExceed75Characters"
+			refimgid="b309d8fa-b888-4ec1-9b59-8bf98bd29765"
+			refpath="/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[2]/div/tag[@tagname='mat-dialog-container']/tag[@tagname='base-resource-assignment-dialog']/tag[@tagname='wfrm-base-dialog']/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[5]/div/tag[@tagname='mat-form-field']/div/div[3]/div/tag[@innertext='Value cannot exceed 75 characters']"
+			robustPath="/dom[@domain='d1wfapps.vividsolutions.com']//tag[@innertext>'Value cannot exceed 75 ch']"
+			searchtimeout="30000ms">
+				/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[2]/div//tag[@tagname='wfrm-base-dialog']/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[5]/?/?/tag[@tagname='mat-form-field']/div/div[3]/?/?/tag[@innertext&gt;'Value cannot exceed 75 ch']
+			</item>
+			<folder
+			capname="divtag"
+			id="dbd55994-3050-4caa-a4da-bb6060e4dfc5"
+			isrooted="True"
+			name="FormFlexWrapperNgPristineNgTouched"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="ba5f873d-942a-4d7d-ac9d-22367ca55c18"
+				name="Text"
+				refimgid="3ae1818a-35d0-4980-b1ef-aec62ae23cc1"
+				refpath="/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[2]/div/tag[@tagname='mat-dialog-container']/tag/tag/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[3]/div[2]/tag/div/div[1]/div/div/input[@type='text' and @value>'Departure: 2022-04-04/ 12:12']"
+				robustPath="/dom[@domain='d1wfapps.vividsolutions.com']//input[@value>'Departure: 2022-04-04/ 12:12']"
+				searchtimeout="30000ms">
+					/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[2]//tag[@tagname='wfrm-base-dialog']/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[3]/div[2]/tag/div/div[1]/div/div/input[@value&gt;'Departure: 2022-04-04/ 12:12']
+				</item>
+				<item
+				addcaps="unknown,webelement,textareatag"
+				capname="textareatag"
+				id="c8a49fbc-f4f2-434f-9b8d-c5b0f6e8a87e"
+				name="False1"
+				refimgid="a93ddc18-847b-4eac-abfd-a8d8fdeadcc4"
+				refpath="/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[2]/div/tag[@tagname='mat-dialog-container']/tag/tag/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[4]/div[2]/tag/div/div[1]/div/textarea[@required='False']"
+				robustPath="/dom[@domain='d1wfapps.vividsolutions.com']//tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[4]/div[2]/tag[@tagname='mat-form-field']/div/div[1]/div/textarea[@required='False']"
+				searchtimeout="30000ms">
+					/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[2]//tag[@tagname='wfrm-base-dialog']/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[4]/div[2]/tag/div/div[1]/?/?/textarea[@required='False']
+				</item>
+				<item
+				addcaps="unknown,webelement"
+				capname="webelement"
+				id="6fcb5659-73ac-49f6-8a82-ad66d2b490f7"
+				name="ValueCannotExceed75Characters1"
+				refimgid="1c33be5b-4e54-442b-a513-665e5ad70c51"
+				refpath="/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[2]/div/tag[@tagname='mat-dialog-container']/tag[@tagname='base-resource-assignment-dialog']/tag[@tagname='wfrm-base-dialog']/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[4]/div[2]/tag[@tagname='mat-form-field']/div/div[3]/div/tag[@innertext='Value cannot exceed 75 characters']"
+				robustPath="/dom[@domain='d1wfapps.vividsolutions.com']//tag[@innertext>'Value cannot exceed 75 ch']"
+				searchtimeout="30000ms">
+					/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[2]//tag[@tagname='wfrm-base-dialog']/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[4]/div[2]/tag/div/div[3]/?/?/tag[@innertext&gt;'Value cannot exceed 75 ch']
+				</item>
+				<basepath>
+					/dom[@domain='d1wfapps.vividsolutions.com']/body/div[5]/div[2]//tag[@tagname='wfrm-base-dialog']/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div
+				</basepath>
+			</folder>
 			<basepath>
 				/dom[@domain='d1wfapps.vividsolutions.com']
 			</basepath>
@@ -171,6 +314,308 @@ lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
 zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
 8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
 F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="0dbef7be-f1c5-4f64-afe7-a2de9fe832b1"
+		isrooted="True"
+		name="WebADEDeveloperLogon"
+		refimgid="34336fed-fbfd-4170-a1c1-5777951ef83c"
+		refpath="/dom[@domain='d1auth.vividsolutions.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,selecttag"
+			capname="selecttag"
+			id="a16c0a86-d6d6-4af6-8462-ff26bb5e756f"
+			name="UserSelect"
+			refimgid="58b04cc5-8a2d-49ae-b27d-f65221abc3ee"
+			refpath="/dom[@domain='d1auth.vividsolutions.com']//select[#'userSelect']"
+			robustPath="/dom[@domain='d1auth.vividsolutions.com']//select[#'userSelect']"
+			searchtimeout="30000ms">
+				/dom[@domain='d1auth.vividsolutions.com']//select[#'userSelect']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="90c05e9f-5c1f-41d3-8825-006c5fe7b0a2"
+			name="Submit"
+			refimgid="c216d0da-796d-457f-a514-a6bb136c7275"
+			refpath="/dom[@domain='d1auth.vividsolutions.com']//div[#'logonInternalPanel']/div[2]/input[@type='submit']"
+			robustPath="/dom[@domain='d1auth.vividsolutions.com']//div[#'logonInternalPanel']/?/?/input[@type='submit']"
+			searchtimeout="30000ms">
+				/dom[@domain='d1auth.vividsolutions.com']//div[#'logonInternalPanel']/?/?/input[@type='submit']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="4e7403d3-d3f8-42ac-8c0b-bb3761a0aa69"
+			name="LogonInternalPanel"
+			refimgid="cdb7a437-15f7-4330-9a03-2d09b7fb18e5"
+			refpath="/dom[@domain='d1auth.vividsolutions.com']//div[#'logonInternalPanel']"
+			robustPath="/dom[@domain='d1auth.vividsolutions.com']//div[#'logonInternalPanel']"
+			searchtimeout="30000ms">
+				/dom[@domain='d1auth.vividsolutions.com']//div[#'logonInternalPanel']
+			</item>
+			<basepath>
+				/dom[@domain='d1auth.vividsolutions.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="1f720c47-fad6-4b7f-91fb-ef5663bf4655"
+		isrooted="True"
+		name="WebADEDeveloperLogonGoogleChrome"
+		refimgid="6ebf1e52-057a-40fc-88c9-ee8ac8ffcb66"
+		refpath="/form[@title>'WebADE Developer Logon - Google']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<basepath>
+				/form[@title&gt;'WebADE Developer Logon - Google']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAKeSURBVDhPtZJdSJNhFMd30U14URAVEZha6T7f
+d/Od2XRu09W0smYRXRR1Ga2LgqiLzMyiILT8zFlplqFQrUjFEOxDWnObaE4nfVEqfmv4lQbVWs+/
+5323YTHorgM/zuE85//nPA+P6L9E4rIIw2djAibT1Bg3xJPJVDUmKMHjfwc/OJHKUSGHMb2KUAOa
+Q6jwTiOfDY6GBz88TgdHU5RkJIUlYzoVhrUsrZV8D3wW0LLh24QGQwPDyQwZSmII7dOaxVAyw/cE
+hpIUuC+Jbg1KRaLl3Bqz1aITDgc1CjKokRPQaOr+gSN3vvIl8H0UPidLfrqU8PO4lYtbKGvNUNVm
+UbEcA4kyQczlzkF9bk7IPIerF/Br2Apfm5T4XXJqIoOejTAIBkzNTjA1u2AsyyB9CRLy4q0PyrOz
+YfDhd4oDtMXhky26XzCQ386EvHoHpLe2k49cHDletwBFzgwYCp9DdX9vA7yOcky+2gu/IwY+exQR
+DKiQF0NcmUGkVdsw/41AdmYasuxpSCkWayd63ZUYyFWind0Eu2YPut1WPCtZGXjIjYXGmbgbJiK+
+mY7Y6yYyMj+BQ5VfID49BXH2FDpbCuBpLsBTC4c3lxXwajRwSg3wuCoWH5IKEVuxlRLIpR13hTt7
+7TVwPcpBb91uNO6XoesCB/cxKdwaMzpqLy0aRF/RzWwo34I/WX/NCPvDPLzO1OKDVo2GyFh4JCno
+MrMYPCjG8/r8vz9UTFkaYkpTAwRrS9UBdJ3chz5TItolLDpZFXoUepSakmBvLgn/kauOMq3rivQk
+qtiAyCIdiSzUEfeDPHjTN+OlSoV2GYf3Badgb7yKJ/X5c0FZeCyVr8hafSLec8+2FrbzSx73tBTD
+S1d20ns7mgrRZLtIxSLRb61O1EG9Jf5oAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="837ea37e-6323-48e2-8d6f-af527d343a72"
+		isrooted="True"
+		name="TaskSwitching"
+		refimgid="afc4f4af-f6e1-4144-a407-d522d7547fea"
+		refpath="/form[@title='Task Switching']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<basepath>
+				/form[@title='Task Switching']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAADSSURBVDhPpdK/DsFQGAXw8wg2L9KI9AHEZmhi
+MBgMBoN4AINNIhaCiXbwFCYjg5T4UyGqxCN4gEOjt7lDew33JL/lO9/XuxTaeThgIhvLwEEmWktP
+YINp7lNs/37kPAKT+E6Wb7dF3jvpXkN+N9tMdW2Sl4bS97k6dYBejTrAU5U6wGOFQm+xoTV/KoU7
+8g14KFMozAKaE18p3JFvwL1FIekgiXwD7koUzPEtJs9VHegWKeQHXkyeqzpwbVDI9d2YPFd10Q/9
+i9FdUYhGcVSdRoAPUdlLBd+8Ak0AAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,uiautomation,nativewindow,windowsapp"
+		capname="windowsapp"
+		id="46f3692c-f2e1-4209-8777-012cdcc0fdd8"
+		isrooted="True"
+		name="DateAndTimeInformation"
+		refimgid="3471f6dc-cfec-4349-ac2e-fbecdd996376"
+		refpath="/winapp[@packagename='Microsoft.Windows.ShellExperienceHost']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<basepath>
+				/winapp[@packagename='Microsoft.Windows.ShellExperienceHost']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABTSURBVDhPxY5BCgAgCAR7nf/3RYaHlZQOWlIL
+g2g5OIhIbugRZMPMhqYsiHECrRWw4wS7rPP4V2tKsIIZ6vsLAN7KFwD0vRdUwI4JTmKCG34LSCYc
+86HMBTwY0AAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="menubar,nativewindow"
+		capname="menubar"
+		id="d337feb3-57ff-410c-8761-df39eaa7edfb"
+		isrooted="True"
+		name="Explorer"
+		refpath="/menubar[@processname='explorer']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="bf5b83f1-ff88-4332-b753-1795303ec280"
+			name="TrayShowDesktopButtonWClass"
+			refimgid="4476f0c3-83a1-4915-a6c0-2d8b8769608f"
+			refpath="/menubar[@processname='explorer' and @class='Shell_TrayWnd']/container[@controlid='303']/button[@text='' and @controlid='307']"
+			robustPath="/menubar[@processname='explorer']/?/?/button[@controlid='307']"
+			searchtimeout="30000ms">
+				/menubar[@processname='explorer']/?/?/button[@controlid='307']
+			</item>
+			<basepath>
+				/menubar[@processname='explorer']
+			</basepath>
+			<icon>
+				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
+VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,uiautomation,nativewindow,windowsapp"
+		capname="windowsapp"
+		id="2b3f0b12-20b7-4d17-9c1c-00c87ce3f151"
+		isrooted="True"
+		name="OneNoteForWindows10"
+		refimgid="4b4223fe-ad44-4802-8bf3-7f72bdc26356"
+		refpath="/winapp[@packagename='Microsoft.Office.OneNote']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<basepath>
+				/winapp[@packagename='Microsoft.Office.OneNote']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAD2SURBVDhPpZO7DcIwFEVZI0vkgxJH+aegYwVK
+KhZgBQoahFiCAtHQQEGHBH1KFsgSD11HtpzEJnwsHcW/e5woz6OyLOkfeoKiKCjPc06WZVqwhn09
+ASbTNKXHvB7kOLtzkRSIk8Mw1AZ0JEnSCBDEIIoi8jxPu1lHHMc0wskILq29ETV0mFYS5LiAMcY3
+ol3WFe8/b/XngiAIpABtxU6/C8TTJNiOrxKjYDM5y/5XAhODAnR0QbCwdi2BusYFqAOUJwb4G7Zt
+twJdVAGvg24l4nN0QYEqkJWoSjDp+z65rkuO42hBtaLk8eYtgZBgAZfqHc2NLOgFHO1OSJAs+DwA
+AAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,uiautomation,nativewindow"
+		capname="form"
+		id="d3cfcb45-d288-417d-a0d6-49d391e63900"
+		isrooted="True"
+		name="TaskManager"
+		refimgid="5bc8d291-73be-4c88-8c1c-3e44aa631ea7"
+		refpath="/form[@name='Task Manager']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<basepath>
+				/form[@name='Task Manager']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAHRSURBVDhPzVJNaxpRFH1/p2SfP9Au8jfaX9EQ
+sskiBGkghREXjcz4LY6KaTRoojMx9WvGmdHRZXBTcFFoKC0Uu+rpu3fGqQqBLnvgMO+9eedw731H
+/F+YzaZv5zMfa8o9Zv4U06mHycRlep4D1x3DcWw0m814KA1AIk3TIqbTaWSzWVSrFdRqNVxff8TN
+TQOtVhPO2OJ1KA1ABvl8Hv8CqoQMQ2mAXYMX7/poPz6Fu214so2rqxpEp9NRDMOA/N5Tz4VCgS+o
+zhLHn5Zssvz+i8824bo2tyZ0XV+9fHWAw8MjOTQfxWKRRcTuN8B4+s3rTeydD9hAaiEy7fjq4IfA
+ycMb+P5EulZZuMn84iebKP3PkfF4PEIul4OQgpXv+yiXy2xAfe0aEM/sL5GYaNtDZDIZiEqlwgZU
+Dr03TXZT+BypglQqtW2wDsvE2w6MZQ0lB8zRqM8cDnuclagFMuj1Hk673XuYpoF2+44DQ2EplUo8
+XHpiChYFjMSqqsb5FUzTDAayg8VisX9720IsFkMikfgqRfvhr7+o1+tzRVGQTCbd8IghqzqxrBEG
+gx7IRNdL64i/Dq8EuLh4zxmgb3jEoBaIjUYdl5cfmJqmBn1HEOIPY6RvYJe0DpUAAAAASUVORK5C
+YII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="host,nativewindow"
+		capname="host"
+		id="1fcf7ed7-a0ac-496d-b167-1c5108245a1e"
+		isrooted="True"
+		name="VIVIDL60"
+		refimgid="9a788ba1-0fdb-4ac2-962b-99eab8f1391f"
+		refpath=""
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="host,nativewindow"
+			capname="host"
+			id="8b6dea98-e4da-49a4-9303-377535fc38af"
+			name="VIVIDL60"
+			refimgid="98438e3f-1341-4793-992c-e836e7a1a4f5"
+			refpath=""
+			robustPath=""
+			searchtimeout="30000ms">
+			</item>
+			<basepath>
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACtUlEQVQ4T62S6zOUYRiH9w/qYzM1o5moMUyNShmHpISUNhIrHRxW
+DjmXpcah2Ky1TcsSa5ZQ0u62csxxMI4p6URGWFlXz6rGNPu1e+b98sx7Xc/v996v5L/N4OgcPYPT
+WPomaH8zSotpGENbP3UtvVQbutDUWVDVmCjVtlOsaeMPtjNd/VNcfwwyNVwuh4ulEFoMQfchQGHj
+5B0rPlkreN1eRKFsdBQYO8eIroAHz6GgCbLqQa6DqxoIV0JIoV20iU/mCndKDY6CFuMQ4WWgEHCG
+gBOrIKYSpOIsWMCn8n7inbHM0VvzZBfXOwr0rX2cL4H0OkjQQrSoIhU1zooK/nc38MpY4oj8Pe6x
+o6QXPnUUVBk6t1+OewJRKgh78Bu2d7f39kh8h/vVEVwiOki9p3MUqGvN2x2viA94QcCBBeCXu86J
+tG94xM/iFjOES7iFfeeaSVJoHQVlYj2+OWuEihpn8rfwzV7leOoXDsdN4yobwFlqxinkGXtP15KQ
++9hRUFT5HK/07wTk2/DJ/oFn8mcO3ZzENfqtgI04BTeyJ0DHbj8NN7IqHAUKZRNzn6xMza8zPrfG
+yMwqA5M/6B1bobXzI7UvJijWWgjtCkWWpvxXkJLz8KBG/3pTqXtJYWWz2HM9afe0xOeokKWUII0v
+IEiWjd+lFI4Fx+HmL9u8lFAU+QeXSDQNFv7Opm2LNauNpZWfzH+1MikS2dN0iySmwWVae5aoaZvl
+gHfkTgp1nXkbjjXFsm7d4oNhFwuLG8wsWGl8NUjFU6NIped6porYDBUlugH2n4jYEZTXGrGJm6sG
+9AxPLDA7VE579zRNpnFqWkdQN/RTUt2NQt1BziMzmWVG9nlKdwRFmma5eMhT6sVfVo38biXX0suI
+TCok7EYegVGZ+EqTt/u7+8fg7BVhF8glEonkF6m1M1/+IilrAAAAAElFTkSuQmCC
 			</icon>
 		</appfolder>
 		<basepath>

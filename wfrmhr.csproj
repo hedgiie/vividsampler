@@ -94,6 +94,18 @@
       <UserCode>true</UserCode>
       <id>6df721bc-2159-43a2-bc9e-7c5b81bd1917</id>
     </Compile>
+    <Compile Include="LoadUser.cs">
+      <BoundTo>7f17be3a-c6dc-4597-9cee-471e9d882d00</BoundTo>
+      <DependentUpon>LoadUser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>33bb597e-1dcb-43fd-90c5-9e39a4e10a08</id>
+    </Compile>
+    <Compile Include="LoadUser.UserCode.cs">
+      <BoundTo>7f17be3a-c6dc-4597-9cee-471e9d882d00</BoundTo>
+      <DependentUpon>LoadUser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>883adfc8-ac26-4f6c-b20b-2f4888f85007</id>
+    </Compile>
     <Compile Include="OpenBrowser.cs">
       <BoundTo>84857c70-cae7-4243-986c-26814b1c4e78</BoundTo>
       <DependentUpon>OpenBrowser.rxrec</DependentUpon>
@@ -148,6 +160,11 @@
       <BoundTo>111e3323-63f7-453a-90bd-be854868f420</BoundTo>
       <id>6dc6c72d-5672-4c46-8d37-9491cc0b9a9f</id>
       <recordtableid>af8917bf-55eb-46a3-b6d9-74f54f6b0914</recordtableid>
+    </None>
+    <None Include="LoadUser.rxrec">
+      <BoundTo>111e3323-63f7-453a-90bd-be854868f420</BoundTo>
+      <id>7f17be3a-c6dc-4597-9cee-471e9d882d00</id>
+      <recordtableid>af09300b-9ac5-4d1b-825c-30a0fb2b938e</recordtableid>
     </None>
     <None Include="OpenBrowser.rxrec">
       <BoundTo>111e3323-63f7-453a-90bd-be854868f420</BoundTo>

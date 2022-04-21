@@ -28,6 +28,14 @@ namespace wfrmhr
     {
         static wfrmhrRepository instance = new wfrmhrRepository();
         wfrmhrRepositoryFolders.ApplicationUnderTestAppFolder _applicationundertest;
+        wfrmhrRepositoryFolders.WebADEDeveloperLogonAppFolder _webadedeveloperlogon;
+        wfrmhrRepositoryFolders.WebADEDeveloperLogonGoogleChromeAppFolder _webadedeveloperlogongooglechrome;
+        wfrmhrRepositoryFolders.TaskSwitchingAppFolder _taskswitching;
+        wfrmhrRepositoryFolders.DateAndTimeInformationAppFolder _dateandtimeinformation;
+        wfrmhrRepositoryFolders.ExplorerAppFolder _explorer;
+        wfrmhrRepositoryFolders.OneNoteForWindows10AppFolder _onenoteforwindows10;
+        wfrmhrRepositoryFolders.TaskManagerAppFolder _taskmanager;
+        wfrmhrRepositoryFolders.VIVIDL60AppFolder _vividl60;
 
         /// <summary>
         /// Gets the singleton class instance representing the wfrmhrRepository element repository.
@@ -45,6 +53,14 @@ namespace wfrmhr
             : base("wfrmhrRepository", "/", null, 0, false, "90584611-5862-417c-b693-c9003ea6109c", ".\\RepositoryImages\\wfrmhrRepository90584611.rximgres")
         {
             _applicationundertest = new wfrmhrRepositoryFolders.ApplicationUnderTestAppFolder(this);
+            _webadedeveloperlogon = new wfrmhrRepositoryFolders.WebADEDeveloperLogonAppFolder(this);
+            _webadedeveloperlogongooglechrome = new wfrmhrRepositoryFolders.WebADEDeveloperLogonGoogleChromeAppFolder(this);
+            _taskswitching = new wfrmhrRepositoryFolders.TaskSwitchingAppFolder(this);
+            _dateandtimeinformation = new wfrmhrRepositoryFolders.DateAndTimeInformationAppFolder(this);
+            _explorer = new wfrmhrRepositoryFolders.ExplorerAppFolder(this);
+            _onenoteforwindows10 = new wfrmhrRepositoryFolders.OneNoteForWindows10AppFolder(this);
+            _taskmanager = new wfrmhrRepositoryFolders.TaskManagerAppFolder(this);
+            _vividl60 = new wfrmhrRepositoryFolders.VIVIDL60AppFolder(this);
         }
 
 #region Variables
@@ -71,6 +87,78 @@ namespace wfrmhr
         {
             get { return _applicationundertest; }
         }
+
+        /// <summary>
+        /// The WebADEDeveloperLogon folder.
+        /// </summary>
+        [RepositoryFolder("0dbef7be-f1c5-4f64-afe7-a2de9fe832b1")]
+        public virtual wfrmhrRepositoryFolders.WebADEDeveloperLogonAppFolder WebADEDeveloperLogon
+        {
+            get { return _webadedeveloperlogon; }
+        }
+
+        /// <summary>
+        /// The WebADEDeveloperLogonGoogleChrome folder.
+        /// </summary>
+        [RepositoryFolder("1f720c47-fad6-4b7f-91fb-ef5663bf4655")]
+        public virtual wfrmhrRepositoryFolders.WebADEDeveloperLogonGoogleChromeAppFolder WebADEDeveloperLogonGoogleChrome
+        {
+            get { return _webadedeveloperlogongooglechrome; }
+        }
+
+        /// <summary>
+        /// The TaskSwitching folder.
+        /// </summary>
+        [RepositoryFolder("837ea37e-6323-48e2-8d6f-af527d343a72")]
+        public virtual wfrmhrRepositoryFolders.TaskSwitchingAppFolder TaskSwitching
+        {
+            get { return _taskswitching; }
+        }
+
+        /// <summary>
+        /// The DateAndTimeInformation folder.
+        /// </summary>
+        [RepositoryFolder("46f3692c-f2e1-4209-8777-012cdcc0fdd8")]
+        public virtual wfrmhrRepositoryFolders.DateAndTimeInformationAppFolder DateAndTimeInformation
+        {
+            get { return _dateandtimeinformation; }
+        }
+
+        /// <summary>
+        /// The Explorer folder.
+        /// </summary>
+        [RepositoryFolder("d337feb3-57ff-410c-8761-df39eaa7edfb")]
+        public virtual wfrmhrRepositoryFolders.ExplorerAppFolder Explorer
+        {
+            get { return _explorer; }
+        }
+
+        /// <summary>
+        /// The OneNoteForWindows10 folder.
+        /// </summary>
+        [RepositoryFolder("2b3f0b12-20b7-4d17-9c1c-00c87ce3f151")]
+        public virtual wfrmhrRepositoryFolders.OneNoteForWindows10AppFolder OneNoteForWindows10
+        {
+            get { return _onenoteforwindows10; }
+        }
+
+        /// <summary>
+        /// The TaskManager folder.
+        /// </summary>
+        [RepositoryFolder("d3cfcb45-d288-417d-a0d6-49d391e63900")]
+        public virtual wfrmhrRepositoryFolders.TaskManagerAppFolder TaskManager
+        {
+            get { return _taskmanager; }
+        }
+
+        /// <summary>
+        /// The VIVIDL60 folder.
+        /// </summary>
+        [RepositoryFolder("1fcf7ed7-a0ac-496d-b167-1c5108245a1e")]
+        public virtual wfrmhrRepositoryFolders.VIVIDL60AppFolder VIVIDL60
+        {
+            get { return _vividl60; }
+        }
     }
 
     /// <summary>
@@ -86,6 +174,7 @@ namespace wfrmhr
         public partial class ApplicationUnderTestAppFolder : RepoGenBaseFolder
         {
             wfrmhrRepositoryFolders.CdkGlobalOverlayWrapperFolder _cdkglobaloverlaywrapper;
+            wfrmhrRepositoryFolders.FormFlexWrapperNgPristineNgTouchedFolder _formflexwrapperngpristinengtouched;
             RepoItemInfo _httpsd1wfappsvividsolutionscompubInfo;
             RepoItemInfo _cdkcellcdkcolumnnamematcellmatcoInfo;
             RepoItemInfo _raptorsiiInfo;
@@ -94,6 +183,14 @@ namespace wfrmhr
             RepoItemInfo _centreInfo;
             RepoItemInfo _ruchitestmanifestInfo;
             RepoItemInfo _matradiooutercircleInfo;
+            RepoItemInfo _someinputtagInfo;
+            RepoItemInfo _actionbuttonwrappermatdialogactionsInfo;
+            RepoItemInfo _matcheckboxinnercontainerInfo;
+            RepoItemInfo _spantagokInfo;
+            RepoItemInfo _matradioinnercircleInfo;
+            RepoItemInfo _cdkcellcdkcolumntypematcellmatcoInfo;
+            RepoItemInfo _falseInfo;
+            RepoItemInfo _valuecannotexceed75charactersInfo;
 
             /// <summary>
             /// Creates a new ApplicationUnderTest  folder.
@@ -102,6 +199,7 @@ namespace wfrmhr
                     base("ApplicationUnderTest", "/dom[@domain='d1wfapps.vividsolutions.com']", parentFolder, 30000, null, false, "a75dfc80-d9e3-495d-b2a9-4fba3120ed8b", "")
             {
                 _cdkglobaloverlaywrapper = new wfrmhrRepositoryFolders.CdkGlobalOverlayWrapperFolder(this);
+                _formflexwrapperngpristinengtouched = new wfrmhrRepositoryFolders.FormFlexWrapperNgPristineNgTouchedFolder(this);
                 _httpsd1wfappsvividsolutionscompubInfo = new RepoItemInfo(this, "HttpsD1wfappsVividsolutionsComPub", ".//div[#'wfrmMain']/?/?/tag[@tagname='wf-application']/div[2]/div[3]/tag/div[2]/div/a[3]", ".//div[#'wfrmMain']//tag[@tagname='wf-menu']/div[2]/div/a[3]", 30000, null, "9b84029e-17c5-43a3-8989-b66976745059");
                 _cdkcellcdkcolumnnamematcellmatcoInfo = new RepoItemInfo(this, "CdkCellCdkColumnNameMatCellMatCo", ".//div[#'core-interface-container']//tag[@tagname='base-wrapper']/div/div/div/div[4]/table/tbody/tr[1]/td[2]", ".//div[#'core-interface-container']//tbody/tr[1]/td[2]", 30000, null, "3ed16c87-ee8d-4801-831d-98b916c06940");
                 _raptorsiiInfo = new RepoItemInfo(this, "RaptorsII", ".//div[#'core-interface-container']/div//tag[@tagname='base-wrapper']/div/div/div[2]/tag[@tagname='mat-tab-group']/div/tag[1]/div/?/?/tag[@tagname='wfrm-assignment-detail-sections']/div//tag[@tagname='wfrm-assignment-detail-resources-desktop']/tag[@tagname='wfrm-base-expansion-panel']/tag[@tagname='mat-expansion-panel']/div/div/div/div/div/div[2]/div/table/tbody/tr[2]/td[@innertext='Raptors II']", ".//div[#'core-interface-container']//td[@innertext='Raptors II']", 30000, null, "a2792ee2-a664-4dde-a052-c367114fb497");
@@ -109,7 +207,15 @@ namespace wfrmhr
                 _assignmentsInfo = new RepoItemInfo(this, "Assignments", ".//div[#'wfrmMain']/?/?/tag[@tagname='wf-application']/div[2]/div[3]/tag/div[2]/div/a[3]/span[@innertext='Assignments']", ".//div[#'wfrmMain']//span[@innertext='Assignments']", 30000, null, "e756ede4-32d2-4bcb-a6c2-cd68d21ab46f");
                 _centreInfo = new RepoItemInfo(this, "Centre", ".//div[#'core-interface-container']//tag[@tagname='base-wrapper']/div/div/div/div[4]/table/tbody/tr[1]/td[1]/span[@innertext='Centre']", ".//div[#'core-interface-container']//tbody/tr[1]/td[1]/span[@innertext='Centre']", 30000, null, "67186c17-4f64-4e47-a60f-521a0525a0c8");
                 _ruchitestmanifestInfo = new RepoItemInfo(this, "RuchiTestManifest", ".//div[#'core-interface-container']/div//tag[@tagname='base-wrapper']/div/div/div[2]/tag[@tagname='mat-tab-group']/div/tag[1]/div/?/?/tag[@tagname='wfrm-assignment-detail-sections']/div//tag[@tagname='wfrm-assignment-detail-resources-desktop']/tag[@tagname='wfrm-base-expansion-panel']/tag[@tagname='mat-expansion-panel']/div/div/div/div/div/div[2]/div/table/tbody/tr[1]/td[@innertext='Ruchi Test Manifest']", ".//div[#'core-interface-container']//td[@innertext='Ruchi Test Manifest']", 30000, null, "f2adb0d5-31db-4bc8-9baf-ac0af45d0089");
-                _matradiooutercircleInfo = new RepoItemInfo(this, "MatRadioOuterCircle", "body/div[5]/div[4]//tag[@tagname='wfrm-base-dialog']/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[1]/?/?/tag[@tagname='mat-form-field']/div/div[1]/?/?/tag[@tagname='mat-radio-group']/tag[2]/label/span[1]/span[1]", ".//tag[@tagname='mat-radio-group']/tag[2]/label/span[1]/span[1]", 30000, null, "0234fdd1-c4b4-4ced-97c7-5a537e4475b2");
+                _matradiooutercircleInfo = new RepoItemInfo(this, "MatRadioOuterCircle", "body/div[5]/div[2]//tag[@tagname='wfrm-base-dialog']/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[1]/div/tag/div/div[1]/div/tag[@tagname='mat-radio-group']/tag[2]/label/span[1]", ".//tag[@tagname='mat-radio-group']/tag[2]/label/span[1]", 30000, null, "0234fdd1-c4b4-4ced-97c7-5a537e4475b2");
+                _someinputtagInfo = new RepoItemInfo(this, "SomeInputTag", "body/form//input", "?/?/form/div/div/div/input", 30000, null, "0535a729-5d8b-4515-b5a4-2e6b9056db69");
+                _actionbuttonwrappermatdialogactionsInfo = new RepoItemInfo(this, "ActionButtonWrapperMatDialogActions", "body/div[5]/div[2]//tag[@tagname='wfrm-base-dialog']/div[2]/div[2]", ".//tag[@tagname='wfrm-base-dialog']/div[2]/div[2]", 30000, null, "f755896c-e3e6-43fe-ab68-9172989f6c6e");
+                _matcheckboxinnercontainerInfo = new RepoItemInfo(this, "MatCheckboxInnerContainer", "body/div[4]/div[2]//tag[@tagname='wfrm-base-dialog']/div[2]/div[2]/?/?/label/span[1]", ".//label/span[1]", 30000, null, "2ed7905b-2c1a-4b47-a7d2-be0da3f9cfdb");
+                _spantagokInfo = new RepoItemInfo(this, "SpanTagOK", "body/div[4]//tag[@tagname='wfrm-base-dialog']/div[2]/div[2]/button/span[@innertext='OK']", ".//span[@innertext='OK']", 30000, null, "970cf806-e42a-4891-820e-1d7697220cc7");
+                _matradioinnercircleInfo = new RepoItemInfo(this, "MatRadioInnerCircle", "body/div[5]/div[2]//tag[@tagname='wfrm-base-dialog']/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[1]/div/tag/div/div[1]/div/tag[@tagname='mat-radio-group']/tag[2]/label/span[1]/span[2]", ".//tag[@tagname='mat-radio-group']/tag[2]/label/span[1]/span[2]", 30000, null, "2411c7fc-b0fd-4295-9df1-25860c31524d");
+                _cdkcellcdkcolumntypematcellmatcoInfo = new RepoItemInfo(this, "CdkCellCdkColumnTypeMatCellMatCo", ".//div[#'core-interface-container']//tag[@tagname='base-wrapper']/div/div/div/div[4]/table/tbody/tr[1]/td[1]", ".//div[#'core-interface-container']//tbody/tr[1]/td[1]", 30000, null, "be6ebb7f-5208-4f4d-8d17-98e8a948a53d");
+                _falseInfo = new RepoItemInfo(this, "False", "body/div[5]/div[2]/div//tag[@tagname='wfrm-base-dialog']/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[5]/?/?/tag[@tagname='mat-form-field']/div/div[1]/?/?/textarea[@required='False']", ".//tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[5]/div/tag[@tagname='mat-form-field']/div/div[1]/div/textarea[@required='False']", 30000, null, "fc084010-7e81-42fc-84e4-c7b3cccf5e41");
+                _valuecannotexceed75charactersInfo = new RepoItemInfo(this, "ValueCannotExceed75Characters", "body/div[5]/div[2]/div//tag[@tagname='wfrm-base-dialog']/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[5]/?/?/tag[@tagname='mat-form-field']/div/div[3]/?/?/tag[@innertext>'Value cannot exceed 75 ch']", ".//tag[@innertext>'Value cannot exceed 75 ch']", 30000, null, "05fc019b-95ed-4570-a20e-53a794182f8c");
             }
 
             /// <summary>
@@ -329,12 +435,213 @@ namespace wfrmhr
             }
 
             /// <summary>
+            /// The SomeInputTag item.
+            /// </summary>
+            [RepositoryItem("0535a729-5d8b-4515-b5a4-2e6b9056db69")]
+            public virtual Ranorex.InputTag SomeInputTag
+            {
+                get
+                {
+                    return _someinputtagInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SomeInputTag item info.
+            /// </summary>
+            [RepositoryItemInfo("0535a729-5d8b-4515-b5a4-2e6b9056db69")]
+            public virtual RepoItemInfo SomeInputTagInfo
+            {
+                get
+                {
+                    return _someinputtagInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ActionButtonWrapperMatDialogActions item.
+            /// </summary>
+            [RepositoryItem("f755896c-e3e6-43fe-ab68-9172989f6c6e")]
+            public virtual Ranorex.DivTag ActionButtonWrapperMatDialogActions
+            {
+                get
+                {
+                    return _actionbuttonwrappermatdialogactionsInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ActionButtonWrapperMatDialogActions item info.
+            /// </summary>
+            [RepositoryItemInfo("f755896c-e3e6-43fe-ab68-9172989f6c6e")]
+            public virtual RepoItemInfo ActionButtonWrapperMatDialogActionsInfo
+            {
+                get
+                {
+                    return _actionbuttonwrappermatdialogactionsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MatCheckboxInnerContainer item.
+            /// </summary>
+            [RepositoryItem("2ed7905b-2c1a-4b47-a7d2-be0da3f9cfdb")]
+            public virtual Ranorex.SpanTag MatCheckboxInnerContainer
+            {
+                get
+                {
+                    return _matcheckboxinnercontainerInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MatCheckboxInnerContainer item info.
+            /// </summary>
+            [RepositoryItemInfo("2ed7905b-2c1a-4b47-a7d2-be0da3f9cfdb")]
+            public virtual RepoItemInfo MatCheckboxInnerContainerInfo
+            {
+                get
+                {
+                    return _matcheckboxinnercontainerInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SpanTagOK item.
+            /// </summary>
+            [RepositoryItem("970cf806-e42a-4891-820e-1d7697220cc7")]
+            public virtual Ranorex.SpanTag SpanTagOK
+            {
+                get
+                {
+                    return _spantagokInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SpanTagOK item info.
+            /// </summary>
+            [RepositoryItemInfo("970cf806-e42a-4891-820e-1d7697220cc7")]
+            public virtual RepoItemInfo SpanTagOKInfo
+            {
+                get
+                {
+                    return _spantagokInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MatRadioInnerCircle item.
+            /// </summary>
+            [RepositoryItem("2411c7fc-b0fd-4295-9df1-25860c31524d")]
+            public virtual Ranorex.SpanTag MatRadioInnerCircle
+            {
+                get
+                {
+                    return _matradioinnercircleInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MatRadioInnerCircle item info.
+            /// </summary>
+            [RepositoryItemInfo("2411c7fc-b0fd-4295-9df1-25860c31524d")]
+            public virtual RepoItemInfo MatRadioInnerCircleInfo
+            {
+                get
+                {
+                    return _matradioinnercircleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CdkCellCdkColumnTypeMatCellMatCo item.
+            /// </summary>
+            [RepositoryItem("be6ebb7f-5208-4f4d-8d17-98e8a948a53d")]
+            public virtual Ranorex.TdTag CdkCellCdkColumnTypeMatCellMatCo
+            {
+                get
+                {
+                    return _cdkcellcdkcolumntypematcellmatcoInfo.CreateAdapter<Ranorex.TdTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CdkCellCdkColumnTypeMatCellMatCo item info.
+            /// </summary>
+            [RepositoryItemInfo("be6ebb7f-5208-4f4d-8d17-98e8a948a53d")]
+            public virtual RepoItemInfo CdkCellCdkColumnTypeMatCellMatCoInfo
+            {
+                get
+                {
+                    return _cdkcellcdkcolumntypematcellmatcoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The False item.
+            /// </summary>
+            [RepositoryItem("fc084010-7e81-42fc-84e4-c7b3cccf5e41")]
+            public virtual Ranorex.TextAreaTag False
+            {
+                get
+                {
+                    return _falseInfo.CreateAdapter<Ranorex.TextAreaTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The False item info.
+            /// </summary>
+            [RepositoryItemInfo("fc084010-7e81-42fc-84e4-c7b3cccf5e41")]
+            public virtual RepoItemInfo FalseInfo
+            {
+                get
+                {
+                    return _falseInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ValueCannotExceed75Characters item.
+            /// </summary>
+            [RepositoryItem("05fc019b-95ed-4570-a20e-53a794182f8c")]
+            public virtual Ranorex.WebElement ValueCannotExceed75Characters
+            {
+                get
+                {
+                    return _valuecannotexceed75charactersInfo.CreateAdapter<Ranorex.WebElement>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ValueCannotExceed75Characters item info.
+            /// </summary>
+            [RepositoryItemInfo("05fc019b-95ed-4570-a20e-53a794182f8c")]
+            public virtual RepoItemInfo ValueCannotExceed75CharactersInfo
+            {
+                get
+                {
+                    return _valuecannotexceed75charactersInfo;
+                }
+            }
+
+            /// <summary>
             /// The CdkGlobalOverlayWrapper folder.
             /// </summary>
             [RepositoryFolder("b157edf8-289c-4dbb-acfc-366af3c78a3b")]
             public virtual wfrmhrRepositoryFolders.CdkGlobalOverlayWrapperFolder CdkGlobalOverlayWrapper
             {
                 get { return _cdkglobaloverlaywrapper; }
+            }
+
+            /// <summary>
+            /// The FormFlexWrapperNgPristineNgTouched folder.
+            /// </summary>
+            [RepositoryFolder("dbd55994-3050-4caa-a4da-bb6060e4dfc5")]
+            public virtual wfrmhrRepositoryFolders.FormFlexWrapperNgPristineNgTouchedFolder FormFlexWrapperNgPristineNgTouched
+            {
+                get { return _formflexwrapperngpristinengtouched; }
             }
         }
 
@@ -347,6 +654,7 @@ namespace wfrmhr
             RepoItemInfo _textInfo;
             RepoItemInfo _falseInfo;
             RepoItemInfo _matradiooutercircleInfo;
+            RepoItemInfo _cdkoverlaybackdropcdkoverlaytranspaInfo;
 
             /// <summary>
             /// Creates a new CdkGlobalOverlayWrapper  folder.
@@ -357,6 +665,7 @@ namespace wfrmhr
                 _textInfo = new RepoItemInfo(this, "Text", ".//tag[@tagname='wfrm-base-dialog']/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[3]/div[2]/tag/div/div[1]/div/div/input[2]", "tag[1]/div/div/div/div[3]/div[2]/tag[@tagname='mat-form-field']/div/div[1]/div/div/input[2]", 30000, null, "58fd4861-98b3-49b2-b439-eefb8794a13b");
                 _falseInfo = new RepoItemInfo(this, "False", ".//tag[@tagname='wfrm-base-dialog']/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div[4]/div[2]/tag/div/div[1]/?/?/textarea[@required='False']", "tag[1]/div/div/div/div[4]/div[2]/tag[@tagname='mat-form-field']/div/div[1]/div/textarea[@required='False']", 30000, null, "238d4119-0da4-4cb1-b25f-c8f42dd444ce");
                 _matradiooutercircleInfo = new RepoItemInfo(this, "MatRadioOuterCircle", "div//tag[@tagname='wfrm-base-dialog']/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div/div/div/tag/div/div[1]/div/tag[@tagname='mat-radio-group']/tag[2]/label/span[1]/span[1]", "label/span[1]/span[1]", 30000, null, "d39a867a-d5e1-4a6d-9ad2-95ff07e1321a");
+                _cdkoverlaybackdropcdkoverlaytranspaInfo = new RepoItemInfo(this, "CdkOverlayBackdropCdkOverlayTranspa", "", "", 30000, null, "2a941724-8443-4545-bef3-33921d4a64b2");
             }
 
             /// <summary>
@@ -452,6 +761,598 @@ namespace wfrmhr
                 get
                 {
                     return _matradiooutercircleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CdkOverlayBackdropCdkOverlayTranspa item.
+            /// </summary>
+            [RepositoryItem("2a941724-8443-4545-bef3-33921d4a64b2")]
+            public virtual Ranorex.DivTag CdkOverlayBackdropCdkOverlayTranspa
+            {
+                get
+                {
+                    return _cdkoverlaybackdropcdkoverlaytranspaInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CdkOverlayBackdropCdkOverlayTranspa item info.
+            /// </summary>
+            [RepositoryItemInfo("2a941724-8443-4545-bef3-33921d4a64b2")]
+            public virtual RepoItemInfo CdkOverlayBackdropCdkOverlayTranspaInfo
+            {
+                get
+                {
+                    return _cdkoverlaybackdropcdkoverlaytranspaInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The FormFlexWrapperNgPristineNgTouchedFolder folder.
+        /// </summary>
+        [RepositoryFolder("dbd55994-3050-4caa-a4da-bb6060e4dfc5")]
+        public partial class FormFlexWrapperNgPristineNgTouchedFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _textInfo;
+            RepoItemInfo _false1Info;
+            RepoItemInfo _valuecannotexceed75characters1Info;
+
+            /// <summary>
+            /// Creates a new FormFlexWrapperNgPristineNgTouched  folder.
+            /// </summary>
+            public FormFlexWrapperNgPristineNgTouchedFolder(RepoGenBaseFolder parentFolder) :
+                    base("FormFlexWrapperNgPristineNgTouched", "body/div[5]/div[2]//tag[@tagname='wfrm-base-dialog']/div[2]/div[1]/tag[@tagname='mat-tab-group']/div/tag[1]/div/div/div", parentFolder, 30000, null, false, "dbd55994-3050-4caa-a4da-bb6060e4dfc5", "")
+            {
+                _textInfo = new RepoItemInfo(this, "Text", "div[3]/div[2]/tag/div/div[1]/div/div/input[@value>'Departure: 2022-04-04/ 12:12']", "", 30000, null, "ba5f873d-942a-4d7d-ac9d-22367ca55c18");
+                _false1Info = new RepoItemInfo(this, "False1", "div[4]/div[2]/tag/div/div[1]/?/?/textarea[@required='False']", "textarea[@required='False']", 30000, null, "c8a49fbc-f4f2-434f-9b8d-c5b0f6e8a87e");
+                _valuecannotexceed75characters1Info = new RepoItemInfo(this, "ValueCannotExceed75Characters1", "div[4]/div[2]/tag/div/div[3]/?/?/tag[@innertext>'Value cannot exceed 75 ch']", "", 30000, null, "6fcb5659-73ac-49f6-8a82-ad66d2b490f7");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("dbd55994-3050-4caa-a4da-bb6060e4dfc5")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("dbd55994-3050-4caa-a4da-bb6060e4dfc5")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Text item.
+            /// </summary>
+            [RepositoryItem("ba5f873d-942a-4d7d-ac9d-22367ca55c18")]
+            public virtual Ranorex.InputTag Text
+            {
+                get
+                {
+                    return _textInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text item info.
+            /// </summary>
+            [RepositoryItemInfo("ba5f873d-942a-4d7d-ac9d-22367ca55c18")]
+            public virtual RepoItemInfo TextInfo
+            {
+                get
+                {
+                    return _textInfo;
+                }
+            }
+
+            /// <summary>
+            /// The False1 item.
+            /// </summary>
+            [RepositoryItem("c8a49fbc-f4f2-434f-9b8d-c5b0f6e8a87e")]
+            public virtual Ranorex.TextAreaTag False1
+            {
+                get
+                {
+                    return _false1Info.CreateAdapter<Ranorex.TextAreaTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The False1 item info.
+            /// </summary>
+            [RepositoryItemInfo("c8a49fbc-f4f2-434f-9b8d-c5b0f6e8a87e")]
+            public virtual RepoItemInfo False1Info
+            {
+                get
+                {
+                    return _false1Info;
+                }
+            }
+
+            /// <summary>
+            /// The ValueCannotExceed75Characters1 item.
+            /// </summary>
+            [RepositoryItem("6fcb5659-73ac-49f6-8a82-ad66d2b490f7")]
+            public virtual Ranorex.WebElement ValueCannotExceed75Characters1
+            {
+                get
+                {
+                    return _valuecannotexceed75characters1Info.CreateAdapter<Ranorex.WebElement>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ValueCannotExceed75Characters1 item info.
+            /// </summary>
+            [RepositoryItemInfo("6fcb5659-73ac-49f6-8a82-ad66d2b490f7")]
+            public virtual RepoItemInfo ValueCannotExceed75Characters1Info
+            {
+                get
+                {
+                    return _valuecannotexceed75characters1Info;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The WebADEDeveloperLogonAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("0dbef7be-f1c5-4f64-afe7-a2de9fe832b1")]
+        public partial class WebADEDeveloperLogonAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _userselectInfo;
+            RepoItemInfo _submitInfo;
+            RepoItemInfo _logoninternalpanelInfo;
+
+            /// <summary>
+            /// Creates a new WebADEDeveloperLogon  folder.
+            /// </summary>
+            public WebADEDeveloperLogonAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("WebADEDeveloperLogon", "/dom[@domain='d1auth.vividsolutions.com']", parentFolder, 30000, null, false, "0dbef7be-f1c5-4f64-afe7-a2de9fe832b1", "")
+            {
+                _userselectInfo = new RepoItemInfo(this, "UserSelect", ".//select[#'userSelect']", ".//select[#'userSelect']", 30000, null, "a16c0a86-d6d6-4af6-8462-ff26bb5e756f");
+                _submitInfo = new RepoItemInfo(this, "Submit", ".//div[#'logonInternalPanel']/?/?/input[@type='submit']", ".//div[#'logonInternalPanel']/?/?/input[@type='submit']", 30000, null, "90c05e9f-5c1f-41d3-8825-006c5fe7b0a2");
+                _logoninternalpanelInfo = new RepoItemInfo(this, "LogonInternalPanel", ".//div[#'logonInternalPanel']", ".//div[#'logonInternalPanel']", 30000, null, "4e7403d3-d3f8-42ac-8c0b-bb3761a0aa69");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("0dbef7be-f1c5-4f64-afe7-a2de9fe832b1")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("0dbef7be-f1c5-4f64-afe7-a2de9fe832b1")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UserSelect item.
+            /// </summary>
+            [RepositoryItem("a16c0a86-d6d6-4af6-8462-ff26bb5e756f")]
+            public virtual Ranorex.SelectTag UserSelect
+            {
+                get
+                {
+                    return _userselectInfo.CreateAdapter<Ranorex.SelectTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UserSelect item info.
+            /// </summary>
+            [RepositoryItemInfo("a16c0a86-d6d6-4af6-8462-ff26bb5e756f")]
+            public virtual RepoItemInfo UserSelectInfo
+            {
+                get
+                {
+                    return _userselectInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Submit item.
+            /// </summary>
+            [RepositoryItem("90c05e9f-5c1f-41d3-8825-006c5fe7b0a2")]
+            public virtual Ranorex.InputTag Submit
+            {
+                get
+                {
+                    return _submitInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Submit item info.
+            /// </summary>
+            [RepositoryItemInfo("90c05e9f-5c1f-41d3-8825-006c5fe7b0a2")]
+            public virtual RepoItemInfo SubmitInfo
+            {
+                get
+                {
+                    return _submitInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LogonInternalPanel item.
+            /// </summary>
+            [RepositoryItem("4e7403d3-d3f8-42ac-8c0b-bb3761a0aa69")]
+            public virtual Ranorex.DivTag LogonInternalPanel
+            {
+                get
+                {
+                    return _logoninternalpanelInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LogonInternalPanel item info.
+            /// </summary>
+            [RepositoryItemInfo("4e7403d3-d3f8-42ac-8c0b-bb3761a0aa69")]
+            public virtual RepoItemInfo LogonInternalPanelInfo
+            {
+                get
+                {
+                    return _logoninternalpanelInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The WebADEDeveloperLogonGoogleChromeAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("1f720c47-fad6-4b7f-91fb-ef5663bf4655")]
+        public partial class WebADEDeveloperLogonGoogleChromeAppFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new WebADEDeveloperLogonGoogleChrome  folder.
+            /// </summary>
+            public WebADEDeveloperLogonGoogleChromeAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("WebADEDeveloperLogonGoogleChrome", "/form[@title>'WebADE Developer Logon - Google']", parentFolder, 30000, null, true, "1f720c47-fad6-4b7f-91fb-ef5663bf4655", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("1f720c47-fad6-4b7f-91fb-ef5663bf4655")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("1f720c47-fad6-4b7f-91fb-ef5663bf4655")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The TaskSwitchingAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("837ea37e-6323-48e2-8d6f-af527d343a72")]
+        public partial class TaskSwitchingAppFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new TaskSwitching  folder.
+            /// </summary>
+            public TaskSwitchingAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("TaskSwitching", "/form[@title='Task Switching']", parentFolder, 30000, null, true, "837ea37e-6323-48e2-8d6f-af527d343a72", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("837ea37e-6323-48e2-8d6f-af527d343a72")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("837ea37e-6323-48e2-8d6f-af527d343a72")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The DateAndTimeInformationAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("46f3692c-f2e1-4209-8777-012cdcc0fdd8")]
+        public partial class DateAndTimeInformationAppFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new DateAndTimeInformation  folder.
+            /// </summary>
+            public DateAndTimeInformationAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("DateAndTimeInformation", "/winapp[@packagename='Microsoft.Windows.ShellExperienceHost']", parentFolder, 30000, null, true, "46f3692c-f2e1-4209-8777-012cdcc0fdd8", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("46f3692c-f2e1-4209-8777-012cdcc0fdd8")]
+            public virtual Ranorex.WindowsApp Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WindowsApp>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("46f3692c-f2e1-4209-8777-012cdcc0fdd8")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ExplorerAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("d337feb3-57ff-410c-8761-df39eaa7edfb")]
+        public partial class ExplorerAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _trayshowdesktopbuttonwclassInfo;
+
+            /// <summary>
+            /// Creates a new Explorer  folder.
+            /// </summary>
+            public ExplorerAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Explorer", "/menubar[@processname='explorer']", parentFolder, 30000, null, true, "d337feb3-57ff-410c-8761-df39eaa7edfb", "")
+            {
+                _trayshowdesktopbuttonwclassInfo = new RepoItemInfo(this, "TrayShowDesktopButtonWClass", "?/?/button[@controlid='307']", "?/?/button[@controlid='307']", 30000, null, "bf5b83f1-ff88-4332-b753-1795303ec280");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("d337feb3-57ff-410c-8761-df39eaa7edfb")]
+            public virtual Ranorex.MenuBar Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.MenuBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("d337feb3-57ff-410c-8761-df39eaa7edfb")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TrayShowDesktopButtonWClass item.
+            /// </summary>
+            [RepositoryItem("bf5b83f1-ff88-4332-b753-1795303ec280")]
+            public virtual Ranorex.Button TrayShowDesktopButtonWClass
+            {
+                get
+                {
+                    return _trayshowdesktopbuttonwclassInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TrayShowDesktopButtonWClass item info.
+            /// </summary>
+            [RepositoryItemInfo("bf5b83f1-ff88-4332-b753-1795303ec280")]
+            public virtual RepoItemInfo TrayShowDesktopButtonWClassInfo
+            {
+                get
+                {
+                    return _trayshowdesktopbuttonwclassInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The OneNoteForWindows10AppFolder folder.
+        /// </summary>
+        [RepositoryFolder("2b3f0b12-20b7-4d17-9c1c-00c87ce3f151")]
+        public partial class OneNoteForWindows10AppFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new OneNoteForWindows10  folder.
+            /// </summary>
+            public OneNoteForWindows10AppFolder(RepoGenBaseFolder parentFolder) :
+                    base("OneNoteForWindows10", "/winapp[@packagename='Microsoft.Office.OneNote']", parentFolder, 30000, null, true, "2b3f0b12-20b7-4d17-9c1c-00c87ce3f151", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("2b3f0b12-20b7-4d17-9c1c-00c87ce3f151")]
+            public virtual Ranorex.WindowsApp Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WindowsApp>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("2b3f0b12-20b7-4d17-9c1c-00c87ce3f151")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The TaskManagerAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("d3cfcb45-d288-417d-a0d6-49d391e63900")]
+        public partial class TaskManagerAppFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new TaskManager  folder.
+            /// </summary>
+            public TaskManagerAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("TaskManager", "/form[@name='Task Manager']", parentFolder, 30000, null, true, "d3cfcb45-d288-417d-a0d6-49d391e63900", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("d3cfcb45-d288-417d-a0d6-49d391e63900")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("d3cfcb45-d288-417d-a0d6-49d391e63900")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The VIVIDL60AppFolder folder.
+        /// </summary>
+        [RepositoryFolder("1fcf7ed7-a0ac-496d-b167-1c5108245a1e")]
+        public partial class VIVIDL60AppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _vividl60Info;
+
+            /// <summary>
+            /// Creates a new VIVIDL60  folder.
+            /// </summary>
+            public VIVIDL60AppFolder(RepoGenBaseFolder parentFolder) :
+                    base("VIVIDL60", "", parentFolder, 30000, null, true, "1fcf7ed7-a0ac-496d-b167-1c5108245a1e", "")
+            {
+                _vividl60Info = new RepoItemInfo(this, "VIVIDL60", "", "", 30000, null, "8b6dea98-e4da-49a4-9303-377535fc38af");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("1fcf7ed7-a0ac-496d-b167-1c5108245a1e")]
+            public virtual Ranorex.Host Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Host>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("1fcf7ed7-a0ac-496d-b167-1c5108245a1e")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The VIVIDL60 item.
+            /// </summary>
+            [RepositoryItem("8b6dea98-e4da-49a4-9303-377535fc38af")]
+            public virtual Ranorex.Host VIVIDL60
+            {
+                get
+                {
+                    return _vividl60Info.CreateAdapter<Ranorex.Host>(true);
+                }
+            }
+
+            /// <summary>
+            /// The VIVIDL60 item info.
+            /// </summary>
+            [RepositoryItemInfo("8b6dea98-e4da-49a4-9303-377535fc38af")]
+            public virtual RepoItemInfo VIVIDL60Info
+            {
+                get
+                {
+                    return _vividl60Info;
                 }
             }
         }

@@ -83,6 +83,44 @@ namespace wfrmhr
             Host.Current.OpenBrowser("https://d1wfapps.vividsolutions.com/pub/wfrm-resources", "chrome", "", false, false, false, false, false, false, false, true);
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WebADEDeveloperLogon.UserSelect' at 184;10.", repo.WebADEDeveloperLogon.UserSelectInfo, new RecordItemIndex(1));
+            repo.WebADEDeveloperLogon.UserSelect.Click("184;10");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Down item 'WebADEDeveloperLogonGoogleChrome' at 1150;590.", repo.WebADEDeveloperLogonGoogleChrome.SelfInfo, new RecordItemIndex(2));
+            repo.WebADEDeveloperLogonGoogleChrome.Self.MoveTo("1150;590");
+            Mouse.ButtonDown(System.Windows.Forms.MouseButtons.Left);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Up item 'WebADEDeveloperLogonGoogleChrome' at 1154;836.", repo.WebADEDeveloperLogonGoogleChrome.SelfInfo, new RecordItemIndex(3));
+            repo.WebADEDeveloperLogonGoogleChrome.Self.MoveTo("1154;836");
+            Mouse.ButtonUp(System.Windows.Forms.MouseButtons.Left);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LWin down}' with focus on 'WebADEDeveloperLogon.UserSelect'.", repo.WebADEDeveloperLogon.UserSelectInfo, new RecordItemIndex(4));
+            repo.WebADEDeveloperLogon.UserSelect.PressKeys("{LWin down}");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WebADEDeveloperLogonGoogleChrome' at 677;846.", repo.WebADEDeveloperLogonGoogleChrome.SelfInfo, new RecordItemIndex(5));
+            repo.WebADEDeveloperLogonGoogleChrome.Self.Click("677;846");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey up}{LWin up}' with focus on 'WebADEDeveloperLogonGoogleChrome'.", repo.WebADEDeveloperLogonGoogleChrome.SelfInfo, new RecordItemIndex(6));
+            repo.WebADEDeveloperLogonGoogleChrome.Self.PressKeys("{LControlKey up}{LWin up}");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WebADEDeveloperLogon.UserSelect' at 129;14.", repo.WebADEDeveloperLogon.UserSelectInfo, new RecordItemIndex(7));
+            repo.WebADEDeveloperLogon.UserSelect.Click("129;14");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WebADEDeveloperLogon.UserSelect' at 119;12.", repo.WebADEDeveloperLogon.UserSelectInfo, new RecordItemIndex(8));
+            repo.WebADEDeveloperLogon.UserSelect.Click("119;12");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'WebADEDeveloperLogon.Submit' at 33;19.", repo.WebADEDeveloperLogon.SubmitInfo, new RecordItemIndex(9));
+            repo.WebADEDeveloperLogon.Submit.Click("33;19");
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data
