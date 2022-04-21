@@ -21,6 +21,9 @@
 			name="VehicleAndAccomodationDetails"
 			ref="68b800d0-0566-4a61-ae81-3ee4280a3e47"
 			type="Recording">
+				<description>
+					<![CDATA[Vehicle and accomodation data]]>
+				</description>
 				<databinding>
 					<var
 					dataname="VehicleAccomodationDetails"
