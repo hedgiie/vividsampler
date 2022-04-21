@@ -23,6 +23,16 @@ mode="Global">
 	namespace="wfrmhr">
 	</codegen>
 	<variables>
+		<var
+		id="43ea09c7-d398-46a2-bfbf-61dc283da5cd"
+		name="AccomodationDetails">
+			33 @##vvddd##@@@@@@@@@@$ test that any character can be typed in no validatn
+		</var>
+		<var
+		id="67be1153-8fdc-49cc-acc9-484bbcf376be"
+		name="VehicleDetails">
+			33vsadfadfa43rt124343434343433ffffffffffffffffasdf@@@@@@@@@##$%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#%@
+		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -1441,6 +1451,10 @@ QAYoxRRQB//Z
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="VehicleDetails">
+				</binding>
 			</bindings>
 			<info
 			id="a75dfc80-d9e3-495d-b2a9-4fba3120ed8b"
@@ -2566,6 +2580,10 @@ nrRRXHh373yNqmwrIGOc0UUV3GB//9k=
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="AccomodationDetails">
+				</binding>
 			</bindings>
 			<info
 			id="c8a49fbc-f4f2-434f-9b8d-c5b0f6e8a87e"

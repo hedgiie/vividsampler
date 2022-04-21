@@ -21,10 +21,35 @@
 			name="VehicleAndAccomodationDetails"
 			ref="68b800d0-0566-4a61-ae81-3ee4280a3e47"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="VehicleAccomodationDetails"
+					datasourceid="2d2220d5-d68c-4b27-825d-8b630c40fbf4"
+					variableid="67be1153-8fdc-49cc-acc9-484bbcf376be"
+					variablename="VehicleDetails">
+					</var>
+					<var
+					dataname="AccomodationDetails"
+					datasourceid="2d2220d5-d68c-4b27-825d-8b630c40fbf4"
+					variableid="43ea09c7-d398-46a2-bfbf-61dc283da5cd"
+					variablename="AccomodationDetails">
+					</var>
+				</databinding>
 			</testmodule>
 			<smartfoldernode
 			id="2d2220d5-d68c-4b27-825d-8b630c40fbf4"
 			name="Test_Vehicle_and_Accomodations_Details_Entry">
+				<parameters>
+					<param
+					name="VehicleAccomodationDetails"
+					value="Jordan33 @##vvddd##@@@@@@@@@@$ test that any character can be typed in no validatn">
+					</param>
+					<param
+					name="AccomodationDetails"
+					value="Chris33vsadfadfa43rt124343434343433ffffffffffffffffasdf@@@@@@@@@##$%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%hris%#%@
+">
+					</param>
+				</parameters>
 			</smartfoldernode>
 			<setup
 			id="5d68089a-f238-4951-bc09-574b10dc3189"
@@ -106,6 +131,16 @@
 		</childhierarchy>
 	</testsuiteentryhierarchy>
 	<datasources>
+		<DataSource
+		id="6edc6a7a-489d-487c-8b3b-591cb964cd29"
+		lastknownrowcount="0"
+		name="DataConnector"
+		type="Ranorex.Core.Data.SimpleDataConnector">
+			<lastknowncolumns>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+		</DataSource>
 	</datasources>
 	<testconfigurations
 	default="TestRun">
