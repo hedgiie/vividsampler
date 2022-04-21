@@ -41,6 +41,8 @@ namespace wfrmhr
         /// </summary>
         public VehicleAndAccomodationDetails()
         {
+            AccomodationDetails = "33 @##vvddd##@@@@@@@@@@$ test that any character can be typed in no validatn";
+            VehicleDetails = "33vsadfadfa43rt124343434343433ffffffffffffffffasdf@@@@@@@@@##$%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#%@";
         }
 
         /// <summary>
@@ -52,6 +54,30 @@ namespace wfrmhr
         }
 
 #region Variables
+
+        string _AccomodationDetails;
+
+        /// <summary>
+        /// Gets or sets the value of variable AccomodationDetails.
+        /// </summary>
+        [TestVariable("43ea09c7-d398-46a2-bfbf-61dc283da5cd")]
+        public string AccomodationDetails
+        {
+            get { return _AccomodationDetails; }
+            set { _AccomodationDetails = value; }
+        }
+
+        string _VehicleDetails;
+
+        /// <summary>
+        /// Gets or sets the value of variable VehicleDetails.
+        /// </summary>
+        [TestVariable("67be1153-8fdc-49cc-acc9-484bbcf376be")]
+        public string VehicleDetails
+        {
+            get { return _VehicleDetails; }
+            set { _VehicleDetails = value; }
+        }
 
 #endregion
 
@@ -109,9 +135,9 @@ namespace wfrmhr
             Mouse.ButtonUp(System.Windows.Forms.MouseButtons.Left);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '33vsadfadfa43rt124343434343433ffffffffffffffffasdf@@@@@@@@@##$%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#%@' with focus on 'ApplicationUnderTest'.", repo.ApplicationUnderTest.SelfInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$VehicleDetails' with focus on 'ApplicationUnderTest'.", repo.ApplicationUnderTest.SelfInfo, new RecordItemIndex(7));
             repo.ApplicationUnderTest.Self.EnsureVisible();
-            Keyboard.Press("33vsadfadfa43rt124343434343433ffffffffffffffffasdf@@@@@@@@@##$%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#%@");
+            Keyboard.Press(VehicleDetails);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.FormFlexWrapperNgPristineNgTouched.False1' at 223;16.", repo.ApplicationUnderTest.FormFlexWrapperNgPristineNgTouched.False1Info, new RecordItemIndex(8));
@@ -126,8 +152,8 @@ namespace wfrmhr
             repo.ApplicationUnderTest.FormFlexWrapperNgPristineNgTouched.False1.Click("223;16");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '33 @##vvddd##@@@@@@@@@@$ test that any character can be typed in no validatn' with focus on 'ApplicationUnderTest.FormFlexWrapperNgPristineNgTouched.False1'.", repo.ApplicationUnderTest.FormFlexWrapperNgPristineNgTouched.False1Info, new RecordItemIndex(11));
-            repo.ApplicationUnderTest.FormFlexWrapperNgPristineNgTouched.False1.PressKeys("33 @##vvddd##@@@@@@@@@@$ test that any character can be typed in no validatn");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$AccomodationDetails' with focus on 'ApplicationUnderTest.FormFlexWrapperNgPristineNgTouched.False1'.", repo.ApplicationUnderTest.FormFlexWrapperNgPristineNgTouched.False1Info, new RecordItemIndex(11));
+            repo.ApplicationUnderTest.FormFlexWrapperNgPristineNgTouched.False1.PressKeys(AccomodationDetails);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.False' at 139;6.", repo.ApplicationUnderTest.FalseInfo, new RecordItemIndex(12));
